@@ -13,6 +13,7 @@ public class BoardLinesExtractor extends LineExtractor {
     private final List<LineExtractor> lineExtractors;
 
     BoardLinesExtractor(GameBoard gameBoard) {
+
         super(gameBoard);
 
 

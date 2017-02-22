@@ -24,6 +24,8 @@ public abstract class Player {
 
     }
 
+    //todo inconsistent naming
+
     Mark getMarkSymbol() {
 
         return new Mark(this.markSymbol, this.position);

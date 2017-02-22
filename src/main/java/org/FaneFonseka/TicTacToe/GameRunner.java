@@ -50,6 +50,7 @@ public class GameRunner {
                 setPlayer2(new UnbeatableComputerPlayer(MarkSymbol.X, this.gameBoard));
                 System.out.println("3. Human vs Computer selected");
                 break;
+
             default:
                 throw new IllegalArgumentException();
         }
@@ -174,6 +175,7 @@ public class GameRunner {
         }
     }
 
+    // TODO: 17/02/2017 inconsistent naming
     private Boolean gameIsWon() {
 
         winChecker = new WinChecker(this.gameBoard);

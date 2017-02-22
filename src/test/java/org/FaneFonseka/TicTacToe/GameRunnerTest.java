@@ -16,30 +16,6 @@ public class GameRunnerTest {
 
     private GameRunner gameRunner;
     private Player player1;
-    private Point point00;
-    private Point point01;
-    private Point point02;
-    private Point point10;
-    private Point point11;
-    private Point point12;
-    private Point point20;
-    private Point point22;
-    private Point point21;
-
-    @Before
-    public void setup() {
-
-        point00 = new Point(0, 0);
-        point01 = new Point(0, 1);
-        point02 = new Point(0, 2);
-        point10 = new Point(1, 0);
-        point11 = new Point(1, 1);
-        point12 = new Point(1, 2);
-        point20 = new Point(2, 0);
-        point22 = new Point(2, 2);
-        point21 = new Point(2, 1);
-
-    }
 
     @Test
     public void whenAHumanVsHumanGameIsRequestedBothPlayersAreHumanPlayers() {
