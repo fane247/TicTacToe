@@ -26,9 +26,9 @@ public abstract class Player {
 
     //todo inconsistent naming
 
-    Mark getMarkSymbol() {
+    MarkSymbol getMarkSymbol() {
 
-        return new Mark(this.markSymbol, this.position);
+        return this.markSymbol;
 
     }
 

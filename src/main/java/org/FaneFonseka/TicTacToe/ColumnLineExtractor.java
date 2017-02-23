@@ -13,36 +13,27 @@ class ColumnLineExtractor extends LineExtractor {
 
     }
 
-
+    @Override
     List<List<Mark>> getLines() {
-
-        int numberOfRows = board.size();
-
-        List<List<Mark>> lines = new ArrayList<List<Mark>>();
-
-        for (int i = 0; i < numberOfRows; i++) {
-
-            lines.add(getLine(i));
-
-        }
-
-        return lines;
+        return null;
     }
 
 
-    List<Mark> getLine(int columnIndex) {
+//    List<List<Mark>> getLines() {
+//
+//        int numberOfRows = board.size();
+//
+//        List<List<Mark>> lines = new ArrayList<List<Mark>>();
+//
+//        for (int i = 0; i < numberOfRows; i++) {
+//
+//            lines.add(getLine(i));
+//
+//        }
+//
+//        return lines;
+//    }
 
-        List<Mark> markList = new ArrayList<Mark>();
 
-        int numberOfRows = board.get(columnIndex).size();
 
-        for (int i = 0; i < numberOfRows; i++) {
-
-            markList.add(board.get(i).get(columnIndex));
-
-        }
-
-        return markList;
-
-    }
 }

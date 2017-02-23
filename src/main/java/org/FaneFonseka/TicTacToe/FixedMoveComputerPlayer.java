@@ -1,6 +1,5 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.awt.*;
 import java.util.Stack;
 
 /**

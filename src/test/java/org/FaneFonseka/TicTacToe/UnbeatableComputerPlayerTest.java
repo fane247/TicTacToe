@@ -15,13 +15,13 @@ public class UnbeatableComputerPlayerTest {
     public void whenGivenAnEmptyBoardASpaceIsChosen() throws InvalidCellException {
 
         GameBoard gameBoard = new GameBoard();
-        GameBoardPrinter gameBoardPrinter = new GameBoardPrinter(gameBoard);
+        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
         UnbeatableComputerPlayer unbeatableComputerPlayer = new UnbeatableComputerPlayer(MarkSymbol.X, gameBoard);
 
         gameBoard.placePlayersMove(unbeatableComputerPlayer);
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
 
         GameBoard blankGameBoard = new GameBoard();
 

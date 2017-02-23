@@ -9,7 +9,7 @@ import java.util.List;
  */
 class GameBoard {
 
-    private List<List<Mark>> board;
+    private List<List<MarkSymbol>> board;
     private int boardSize;
 
     GameBoard() {
@@ -24,7 +24,7 @@ class GameBoard {
 
         board = new ArrayList<>();
 
-        List<List<Mark>> tempBoard = anotherGameBoard.getBoard();
+        List<List<MarkSymbol>> tempBoard = anotherGameBoard.getBoard();
 
         for (int i = 0; i < boardSize; i++) {
 
@@ -32,9 +32,9 @@ class GameBoard {
 
             for (int j = 0; j < boardSize; j++) {
 
-                MarkSymbol markSymbol = tempBoard.get(i).get(j).MARK_SYMBOL;
+                MarkSymbol markSymbol = tempBoard.get(i).get(j);
 
-                board.get(i).add(new Mark(markSymbol, new Point(j, i)));
+                board.get(i).add(markSymbol);
             }
 
         }
@@ -53,7 +53,7 @@ class GameBoard {
 
             for (int j = 0; j < boardSize; j++) {
 
-                board.get(i).add(new Mark(MarkSymbol.BLANK, new Point(j, i)));
+                board.get(i).add(MarkSymbol.BLANK);
             }
 
         }
@@ -68,11 +68,11 @@ class GameBoard {
             throw new InvalidCellException();
         }
 
-        int y = (int) move.getY();
-        int x = (int) move.getX();
+        int y = move.getY();
+        int x = move.getX();
 
-        List<Mark> row = board.get(y);
-        Mark playerMark = player.getMarkSymbol();
+        List<MarkSymbol> row = board.get(y);
+        MarkSymbol playerMark = player.getMarkSymbol();
 
         row.set(x, playerMark);
 
@@ -95,19 +95,19 @@ class GameBoard {
         int x = (int) point.getX();
         int y = (int) point.getY();
 
-        MarkSymbol cellContent = getCell(x, y).MARK_SYMBOL;
+        MarkSymbol cellContent = getCell(x, y);
 
         return !cellContent.equals(MarkSymbol.BLANK);
     }
 
 
-    List<List<Mark>> getBoard() {
+    List<List<MarkSymbol>> getBoard() {
 
         return board;
     }
 
 
-    Mark getCell(int x, int y) {
+    MarkSymbol getCell(int x, int y) {
 
         return board.get(y).get(x);
     }

@@ -3,11 +3,9 @@ package org.FaneFonseka.TicTacToe;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Arrays;
 import java.util.List;
 
-import static org.FaneFonseka.TicTacToe.MarkSymbol.BLANK;
 import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
 
 
@@ -18,27 +16,27 @@ import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
 public class GameBoardTest {
 
     private GameBoard gameBoard;
-    private GameBoardPrinter gameBoardPrinter;
+    private GameBoardFormatter gameBoardFormatter;
 
     @Before
     public void setUp() {
 
         gameBoard = new GameBoard();
-        gameBoardPrinter = new GameBoardPrinter(gameBoard);
+        gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
     }
 
     @Test
     public void whenGameBoardIsCreatedAllSpacesAreBlank() throws InvalidCellException {
 
-        Mark blankMark = new Mark(BLANK);
-        List<Mark> blankRow1 = Arrays.asList(blankMark,blankMark,blankMark);
-        List<Mark> blankRow2 = Arrays.asList(blankMark,blankMark,blankMark);
-        List<Mark> blankRow3 = Arrays.asList(blankMark,blankMark,blankMark);
+        MarkSymbol blankMark = MarkSymbol.BLANK;
+        List<MarkSymbol> blankRow1 = Arrays.asList(blankMark, blankMark, blankMark);
+        List<MarkSymbol> blankRow2 = Arrays.asList(blankMark, blankMark, blankMark);
+        List<MarkSymbol> blankRow3 = Arrays.asList(blankMark, blankMark, blankMark);
 
-        List<List<Mark>> expectedBoard = Arrays.asList(blankRow1, blankRow2, blankRow3);
+        List<List<MarkSymbol>> expectedBoard = Arrays.asList(blankRow1, blankRow2, blankRow3);
 
-        List<List<Mark>> actualBoard = gameBoard.getBoard();
+        List<List<MarkSymbol>> actualBoard = gameBoard.getBoard();
 
         assert expectedBoard.equals(actualBoard);
     }
@@ -52,12 +50,11 @@ public class GameBoardTest {
 
         gameBoard.placePlayersMove(fixedMoveComputerPlayer);
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
 
-        Mark markPlayedOnBoard = gameBoard.getCell(move.x, move.y);
-        MarkSymbol markOnGameBoard = markPlayedOnBoard.MARK_SYMBOL;
+        MarkSymbol markSymbolPlayedOnBoard = gameBoard.getCell(move.getX(), move.getY());
 
-        assert markOnGameBoard.equals(fixedMoveComputerPlayer.markSymbol);
+        assert markSymbolPlayedOnBoard.equals(fixedMoveComputerPlayer.markSymbol);
 
     }
 

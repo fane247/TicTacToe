@@ -13,17 +13,22 @@ class RowLineExtractor extends LineExtractor {
 
     }
 
-
+    @Override
     List<List<Mark>> getLines() {
-
-        return board;
+        return null;
     }
 
-    List<Mark> getLine(int rowIndex) {
 
-        return board.get(rowIndex);
-
-    }
+//    List<List<Mark>> getLines() {
+//
+//        return board;
+//    }
+//
+//    List<Mark> getLine(int rowIndex) {
+//
+//        return board.get(rowIndex);
+//
+//    }
 
 
 }

@@ -134,7 +134,7 @@ public class GameRunner {
 
     public void startGame() throws InvalidCellException {
 
-        GameBoardPrinter gameBoardPrinter = new GameBoardPrinter(gameBoard);
+        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
         System.out.println("make your selection in the for xy");
         System.out.println("for example the bottom right square would be 22");
@@ -143,12 +143,12 @@ public class GameRunner {
         while (!gameIsWon()) {
 
             System.out.println(currentPlayer.markSymbol + "'s move");
-            gameBoardPrinter.printGameBoard();
+            gameBoardFormatter.formatGameBoard();
             tryMove();
             swapPlayer();
         }
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
         System.out.println(winChecker.announceWinner());
 
     }

@@ -1,48 +1,49 @@
 package org.FaneFonseka.TicTacToe;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by Fane on 16/01/2017.
  */
-public class GameBoardPrinterTest {
+public class GameBoardFormatterTest {
 
-    private GameBoardPrinter gameBoardPrinter;
+    private GameBoardFormatter gameBoardFormatter;
     private GameBoard gameBoard;
 
     @Before
     public void setup(){
 
         gameBoard = new GameBoard();
-        gameBoardPrinter = new GameBoardPrinter(gameBoard);
+        gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
-        List<List<Mark>> board = gameBoard.getBoard();
+        List<List<MarkSymbol>> board = gameBoard.getBoard();
         MarkSymbol markSymbol = MarkSymbol.X;
 
-        board.get(0).set(0,new Mark(markSymbol));
-        board.get(0).set(1,new Mark(markSymbol));
-        board.get(0).set(2,new Mark(markSymbol));
+        board.get(0).set(0, markSymbol);
+        board.get(0).set(1, markSymbol);
+        board.get(0).set(2, markSymbol);
 
     }
 
     @Test
     public void whenGetLineIsCalledGameBoardLineIsReturnedWithPipeDelimiters() throws InvalidCellException {
 
-        String firstGameBoardLine = gameBoardPrinter.getLine(0);
+        String firstGameBoardLine = gameBoardFormatter.getFormattedLine(0);
         String expectedGameBoardLine = " X | X | X ";
 
-        assert firstGameBoardLine.equals(expectedGameBoardLine);
+        assertEquals(expectedGameBoardLine, firstGameBoardLine);
 
     }
 
     @Test
     public void whenPrintGameBoardIsCalledGameBoardIsPrintedToConsoleWithPipes() throws InvalidCellException {
 
-        String actualOutput = gameBoardPrinter.printGameBoard();
+        String actualOutput = gameBoardFormatter.formatGameBoard();
 
         String expectedOutput =
 
@@ -51,7 +52,7 @@ public class GameBoardPrinterTest {
                 " 1 |   |   |   " + "\n" +
                 " 2 |   |   |   " + "\n";
 
-        Assert.assertEquals(actualOutput,expectedOutput);
+        assertEquals(actualOutput, expectedOutput);
     }
 
 }

@@ -1,6 +1,5 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.awt.*;
 
 /**
  * Created by Fane on 13/01/2017.

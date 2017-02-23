@@ -6,34 +6,34 @@ import java.util.StringJoiner;
 /**
  * Created by Fane on 16/01/2017.
  */
-class GameBoardPrinter {
+class GameBoardFormatter {
 
 
     private final GameBoard gameBoard;
 
-    GameBoardPrinter(GameBoard gameBoard) {
+    GameBoardFormatter(GameBoard gameBoard) {
 
         this.gameBoard = gameBoard;
     }
 
 
-    String getLine(int rowIndex) {
+    String getFormattedLine(int rowIndex) {
 
 
         StringJoiner stringJoiner = new StringJoiner("|");
-        List<Mark> row = gameBoard.getBoard().get(rowIndex);
+        List<MarkSymbol> row = gameBoard.getBoard().get(rowIndex);
 
 
-        for (Mark mark : row) {
+        for (MarkSymbol markSymbol : row) {
 
-            stringJoiner.add(mark.getMarkName());
+            stringJoiner.add(markSymbol.getMarkName());
 
         }
 
         return stringJoiner.toString();
     }
 
-    String printGameBoard() {
+    String formatGameBoard() {
 
         int numberOfRows = gameBoard.getBoard().size();
 
@@ -41,7 +41,7 @@ class GameBoardPrinter {
 
         for (int i = 0; i < numberOfRows; i++) {
 
-            boardOutput = boardOutput + " " + i + " |" + getLine(i) + "\n";
+            boardOutput = boardOutput + " " + i + " |" + getFormattedLine(i) + "\n";
 
         }
 

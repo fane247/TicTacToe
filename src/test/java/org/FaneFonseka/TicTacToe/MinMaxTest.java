@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class MinMaxTest {
 
     private GameBoard gameBoardWithPoint02Blank;
-    private GameBoardPrinter gameBoardPrinter;
+    private GameBoardFormatter gameBoardFormatter;
     private Point point00;
     private Point point01;
     private Point point02;
@@ -32,7 +32,7 @@ public class MinMaxTest {
     public void setup() throws InvalidCellException {
 
         gameBoardWithPoint02Blank = new GameBoard();
-        gameBoardPrinter = new GameBoardPrinter(gameBoardWithPoint02Blank);
+        gameBoardFormatter = new GameBoardFormatter(gameBoardWithPoint02Blank);
 
         point00 = new Point(0, 0);
         point01 = new Point(0, 1);
@@ -74,7 +74,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
 
         assert minMax.gameIsOver(gameBoardWithPoint02Blank);
 
@@ -87,7 +87,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
 
         int score = minMax.evaluateGameBoard(gameBoardWithPoint02Blank);
 
@@ -105,7 +105,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
 
         Integer score = minMax.getMaxMoveScore(gameBoardWithPoint02Blank);
 
@@ -120,7 +120,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardPrinter.printGameBoard();
+        gameBoardFormatter.formatGameBoard();
 
         Integer score = minMax.getMinMoveScore(gameBoardWithPoint02Blank);
 

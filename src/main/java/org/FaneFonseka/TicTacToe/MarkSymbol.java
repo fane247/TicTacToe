@@ -5,7 +5,29 @@ package org.FaneFonseka.TicTacToe;
  */
 public enum MarkSymbol {
 
-    O, X, BLANK
+    O, X, BLANK;
 
+
+    String getMarkName() {
+
+        String markName = null;
+
+        switch (this) {
+
+            case O:
+                markName = " O ";
+                break;
+
+            case X:
+                markName = " X ";
+                break;
+
+            case BLANK:
+                markName = "   ";
+                break;
+        }
+
+        return markName;
+    }
 
 }

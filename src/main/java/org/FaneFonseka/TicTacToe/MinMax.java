@@ -98,17 +98,29 @@ public class MinMax {
 
         ArrayList<Point> availableSpaces = new ArrayList<>();
 
-        List<List<Mark>> board = gameBoard.getBoard();
+        List<List<MarkSymbol>> board = gameBoard.getBoard();
 
-        for (List<Mark> markList : board) {
+        // TODO: 23/02/2017 replace with regular loop to get index's
 
-            for (Mark mark : markList) {
 
-                if (mark.MARK_SYMBOL.equals(MarkSymbol.BLANK)) {
+        int boardSize = board.size();
 
-                    Point position = mark.getPosition();
-                    availableSpaces.add(position);
+
+        for (int i = 0; i < boardSize; i++) {
+
+
+            int rowSize = board.get(i).size();
+
+            for (int j = 0; j < rowSize; j++) {
+
+                MarkSymbol currentCell = board.get(i).get(j);
+
+                if (currentCell.equals(MarkSymbol.BLANK)) {
+
+                    availableSpaces.add(new Point(i, j));
+
                 }
+
             }
 
         }
