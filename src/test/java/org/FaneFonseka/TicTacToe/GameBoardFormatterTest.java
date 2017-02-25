@@ -43,7 +43,7 @@ public class GameBoardFormatterTest {
     @Test
     public void whenPrintGameBoardIsCalledGameBoardIsPrintedToConsoleWithPipes() throws InvalidCellException {
 
-        String actualOutput = gameBoardFormatter.formatGameBoard();
+        String actualOutput = gameBoardFormatter.getFormatedGameBoard();
 
         String expectedOutput =
 

@@ -55,10 +55,8 @@ public class GameBoardEvaluator {
 
     private void setMarkSymbolsList() {
 
-        BoardLinesExtractor boardLinesExtractor = new BoardLinesExtractor(gameBoard);
-        MarkSymbolExtractor markSymbolExtractor = new MarkSymbolExtractor();
-        List<List<Mark>> allLines = boardLinesExtractor.getLines();
-        markSymbolsLists = markSymbolExtractor.getMarkSymbolsLists(allLines);
+        LineExtractor lineExtractor = new LineExtractor(gameBoard);
+        markSymbolsLists = lineExtractor.getAllLines();
 
     }
 

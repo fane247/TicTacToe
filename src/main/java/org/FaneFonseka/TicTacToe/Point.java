@@ -5,7 +5,6 @@ package org.FaneFonseka.TicTacToe;
  */
 public class Point {
 
-
     private int x;
     private int y;
 
@@ -28,5 +27,19 @@ public class Point {
         return x;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Point)) return false;
 
+        Point point = (Point) o;
+
+        if (x != point.x) return false;
+        return y == point.y;
+    }
+
+    @Override
+    public String toString() {
+        return "X= " + x + ", Y= " + y;
+    }
 }

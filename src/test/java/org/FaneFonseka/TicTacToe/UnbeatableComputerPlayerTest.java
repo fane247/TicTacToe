@@ -21,7 +21,7 @@ public class UnbeatableComputerPlayerTest {
 
         gameBoard.placePlayersMove(unbeatableComputerPlayer);
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
 
         GameBoard blankGameBoard = new GameBoard();
 

@@ -21,17 +21,17 @@ public class LineExtractor {
     }
 
 
-    List<List<MarkSymbol>> getLines() {
+    public List<List<MarkSymbol>> getAllLines() {
 
-
-        List<List<MarkSymbol>> columns = getColumns();
-
-
+        allLines = new ArrayList<>();
+        getColumns();
+        getRows();
+        getDiagonals();
+        return allLines;
     }
 
 
-    List<List<MarkSymbol>> getColumns() {
-
+    private void getColumns() {
 
         for (int i = 0; i < board.size(); i++) {
 
@@ -39,50 +39,42 @@ public class LineExtractor {
 
             List<MarkSymbol> markColumn = new ArrayList<>();
 
-            for (int j = 0; j < numberOfColumns; i++) {
+            for (int j = 0; j < numberOfColumns; j++) {
 
                 markColumn.add(board.get(j).get(i));
 
             }
 
-            markSymbolLists.add(markColumn);
+            allLines.add(markColumn);
 
         }
 
-        return markSymbolLists;
-
     }
 
-    List<List<MarkSymbol>> getRows() {
-
-        List<List<MarkSymbol>> markSymbolsLists = new ArrayList<>();
+    private void getRows() {
 
         for (int i = 0; i < board.size(); i++) {
 
-            List<MarkSymbol> markSymbols = board.get(0);
-            markSymbolsLists.add(markSymbols);
+            List<MarkSymbol> markSymbols = board.get(i);
+            allLines.add(markSymbols);
 
         }
 
-        return markSymbolsLists;
-
     }
 
-    List<List<MarkSymbol>> getDiagonal() {
-
-        List<List<MarkSymbol>> markSymbolsLists = new ArrayList<>();
-
+    private void getDiagonals() {
 
         int j = board.size() - 1;
 
 //        0,2 1,1 2,0
 
-        List<MarkSymbol> markSymbolsDiagonals = new ArrayList<>();
+        List<MarkSymbol> diagonalTopRightDown = new ArrayList<>();
+        List<MarkSymbol> diagonalTopLeftDown = new ArrayList<>();
 
         for (int i = 0; i < board.size(); i++) {
 
             MarkSymbol markSymbol = board.get(i).get(j);
-            markSymbolsDiagonals.add(markSymbol);
+            diagonalTopRightDown.add(markSymbol);
 
             j--;
 
@@ -91,16 +83,14 @@ public class LineExtractor {
         for (int i = 0; i < board.size(); i++) {
 
             MarkSymbol markSymbol = board.get(i).get(i);
-            markSymbolsDiagonals.add(markSymbol);
+            diagonalTopLeftDown.add(markSymbol);
 
         }
 
-        markSymbolsLists.add(markSymbolsDiagonals);
-
-        return markSymbolsLists;
+        allLines.add(diagonalTopLeftDown);
+        allLines.add(diagonalTopRightDown);
 
     }
-
 
 
 }

@@ -143,12 +143,12 @@ public class GameRunner {
         while (!gameIsWon()) {
 
             System.out.println(currentPlayer.markSymbol + "'s move");
-            gameBoardFormatter.formatGameBoard();
+            gameBoardFormatter.getFormatedGameBoard();
             tryMove();
             swapPlayer();
         }
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
         System.out.println(winChecker.announceWinner());
 
     }

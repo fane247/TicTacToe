@@ -50,7 +50,7 @@ public class GameBoardTest {
 
         gameBoard.placePlayersMove(fixedMoveComputerPlayer);
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
 
         MarkSymbol markSymbolPlayedOnBoard = gameBoard.getCell(move.getX(), move.getY());
 

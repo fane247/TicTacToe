@@ -1,6 +1,5 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -117,7 +116,7 @@ public class MinMax {
 
                 if (currentCell.equals(MarkSymbol.BLANK)) {
 
-                    availableSpaces.add(new Point(i, j));
+                    availableSpaces.add(new Point(j, i));
 
                 }
 

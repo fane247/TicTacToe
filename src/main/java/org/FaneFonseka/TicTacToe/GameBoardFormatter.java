@@ -33,7 +33,7 @@ class GameBoardFormatter {
         return stringJoiner.toString();
     }
 
-    String formatGameBoard() {
+    String getFormatedGameBoard() {
 
         int numberOfRows = gameBoard.getBoard().size();
 

@@ -4,8 +4,9 @@ package org.FaneFonseka.TicTacToe;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Fane on 24/01/2017.
@@ -59,11 +60,16 @@ public class MinMaxTest {
     @Test
     public void whenGivenAGameBoardAllEmptySpacesAreReturned() throws InvalidCellException {
 
+        System.out.println(gameBoardFormatter.getFormatedGameBoard());
+
         ArrayList<Point> availableSpaces = minMax.getAvailableSpaces(gameBoardWithPoint02Blank);
 
         Point actualPoint = availableSpaces.get(0);
 
-        assert actualPoint.equals(point02);
+        System.out.println(actualPoint);
+        System.out.println(point02);
+
+        assertEquals(point02, actualPoint);
 
     }
 
@@ -74,7 +80,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
 
         assert minMax.gameIsOver(gameBoardWithPoint02Blank);
 
@@ -87,7 +93,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
 
         int score = minMax.evaluateGameBoard(gameBoardWithPoint02Blank);
 
@@ -105,7 +111,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
 
         Integer score = minMax.getMaxMoveScore(gameBoardWithPoint02Blank);
 
@@ -120,7 +126,7 @@ public class MinMaxTest {
 
         gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        gameBoardFormatter.formatGameBoard();
+        gameBoardFormatter.getFormatedGameBoard();
 
         Integer score = minMax.getMinMoveScore(gameBoardWithPoint02Blank);
 

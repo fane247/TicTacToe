@@ -1,11 +1,10 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.util.ArrayList;
 import java.util.List;
 
 class WinChecker {
 
-    private List<List<Mark>> allLines;
+    private List<List<MarkSymbol>> allLines;
     List<List<MarkSymbol>> allMarkSymbolLines;
     private GameBoard gameBoard;
     private boolean xHasWon;
@@ -19,7 +18,7 @@ class WinChecker {
 
     boolean gameIsOver() {
 
-        setAllMarkSymbolLines();
+        setAllLines();
 
         xHasWon = markSymbolHasWon(MarkSymbol.X);
         oHasWon = markSymbolHasWon(MarkSymbol.O);
@@ -36,16 +35,10 @@ class WinChecker {
         return gameIsOver;
     }
 
-    void setAllMarkSymbolLines() {
-        setAllLines();
-        MarkSymbolExtractor markSymbolExtractor = new MarkSymbolExtractor();
-        allMarkSymbolLines = markSymbolExtractor.getMarkSymbolsLists(allLines);
-    }
 
     void setAllLines() {
-        allLines = new ArrayList<>();
-        BoardLinesExtractor boardLinesExtractor = new BoardLinesExtractor(gameBoard);
-        allLines = boardLinesExtractor.getLines();
+        LineExtractor lineExtractor = new LineExtractor(gameBoard);
+        allMarkSymbolLines = lineExtractor.getAllLines();
     }
 
 
