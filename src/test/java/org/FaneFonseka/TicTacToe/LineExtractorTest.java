@@ -42,8 +42,11 @@ public class LineExtractorTest {
         fixedMoveComputerPlayerO = new FixedMoveComputerPlayer(MarkSymbol.O, point11,
                 point10, point20, point22);
 
-        gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerO);
-        gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//        gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerO);
+//        gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+
+        fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoard);
+        fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoard);
 
 //        System.out.println("starting GameBoard");
         gameBoardFormatter.getFormattedGameBoard();

@@ -78,22 +78,11 @@ class GameBoard {
 
     }
 
-    void placeAllPlayersMoves(FixedMoveComputerPlayer player) throws InvalidCellException {
-
-        int movesSize = player.moves.size();
-
-        for (int i = 0; i < movesSize; i++) {
-
-            placePlayersMove(player);
-
-        }
-
-    }
 
     private Boolean cellIsOccupied(Point point) {
 
-        int x = (int) point.getX();
-        int y = (int) point.getY();
+        int x = point.getX();
+        int y = point.getY();
 
         MarkSymbol cellContent = getCell(x, y);
 
@@ -110,6 +99,17 @@ class GameBoard {
     MarkSymbol getCell(int x, int y) {
 
         return board.get(y).get(x);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof GameBoard)) return false;
+
+        GameBoard gameBoard = (GameBoard) o;
+
+        if (boardSize != gameBoard.boardSize) return false;
+        return board.equals(gameBoard.board);
     }
 
 }

@@ -22,37 +22,6 @@ public class GameRunnerTest {
     }
 
     @Test
-    public void whenSwapPlayerIsCalledCurrentPlayerSwapsToOtherPlayer() throws InvalidCellException {
-
-        UserInput userInput = new UserInput() {
-            @Override
-            public int getInt() {
-                return 1;
-            }
-
-            @Override
-            public String getString() {
-                return null;
-            }
-        };
-
-        GameRunner gameRunner = new HumanVsComputerGameRunner(userInput, printStream);
-
-        gameRunner.setCurrentPlayer();
-
-        gameRunner.swapPlayer();
-
-        Player currentPlayer = gameRunner.getCurrentPlayer();
-
-        Player player2 = gameRunner.getPlayer2();
-
-        assertEquals(currentPlayer, player2);
-
-        //this assumes that player1 is current player. need to add set current player?
-
-    }
-
-    @Test
     public void whenHumanPlayerRequestsToStartFirstPlayer1IsMadeCurrentPlayer() {
 
         UserInput userInput = new UserInput() {
@@ -80,6 +49,37 @@ public class GameRunnerTest {
     }
 
     @Test
+    public void whenSwapPlayerIsCalledCurrentPlayerSwapsToOtherPlayer() throws InvalidCellException {
+
+        UserInput userInput = new UserInput() {
+
+            @Override
+            public int getInt() {
+                return 1;
+            }
+
+            @Override
+            public String getString() {
+                return null;
+            }
+        };
+
+        GameRunner gameRunner = new HumanVsComputerGameRunner(userInput, printStream);
+
+        gameRunner.trySetCurrentPlayer();
+
+        gameRunner.swapPlayer();
+
+        Player currentPlayer = gameRunner.getCurrentPlayer();
+
+        Player player2 = gameRunner.getPlayer2();
+
+        assertEquals(currentPlayer, player2);
+
+    }
+
+
+    @Test
     public void playerToMakeFirstMoveHasXMarkSymbol() {
 
         UserInput userInput = new UserInput() {
@@ -103,32 +103,6 @@ public class GameRunnerTest {
         assertEquals(MarkSymbol.X, player1.markSymbol);
 
     }
-
-    @Test
-    public void whenGameIsOverUserIsAskedForRematch() throws InvalidCellException {
-
-        UserInput userInput = new UserInput() {
-            @Override
-            public int getInt() {
-                return 1;
-            }
-
-            @Override
-            public String getString() {
-                return "n";
-            }
-        };
-
-        ComputerVsComputerGameRunner computerVsComputerGameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
-
-        computerVsComputerGameRunner.trySetCurrentPlayer();
-
-        computerVsComputerGameRunner.startGame();
-
-        assertTrue(!computerVsComputerGameRunner.userWantsRematch);
-
-    }
-
 
     @Test
     public void whenStartGameIsCalledGameIsPlayedAndFinalStateOfGameBoardIsNotBlank() throws InvalidCellException {
@@ -158,6 +132,32 @@ public class GameRunnerTest {
         assertNotEquals(finalGameBoard, blankGameBoard);
 
     }
+
+    @Test
+    public void whenGameIsOverUserIsAskedForRematch() throws InvalidCellException {
+
+        UserInput userInput = new UserInput() {
+            @Override
+            public int getInt() {
+                return 1;
+            }
+
+            @Override
+            public String getString() {
+                return "n";
+            }
+        };
+
+        ComputerVsComputerGameRunner computerVsComputerGameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
+
+        computerVsComputerGameRunner.trySetCurrentPlayer();
+
+        computerVsComputerGameRunner.startGame();
+
+        assertTrue(!computerVsComputerGameRunner.userWantsRematch);
+
+    }
+
 
     @Test
     public void WhenUserGivesInvalidInputInResponseToRematchQuestionIsAskedAgain() throws InvalidCellException {

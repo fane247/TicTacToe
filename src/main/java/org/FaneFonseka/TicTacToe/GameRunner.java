@@ -97,12 +97,12 @@ public abstract class GameRunner {
             while (!gameIsOver()) {
 
                 printStream.println(currentPlayer.markSymbol + "'s move");
-                gameBoardFormatter.getFormattedGameBoard();
+                printStream.println(gameBoardFormatter.getFormattedGameBoard());
                 tryMove();
                 swapPlayer();
             }
 
-            gameBoardFormatter.getFormattedGameBoard();
+            printStream.println(gameBoardFormatter.getFormattedGameBoard());
             printStream.println(winChecker.announceWinner());
 
             tryPlayAgain();
@@ -110,6 +110,39 @@ public abstract class GameRunner {
         }
 
     }
+
+    private Boolean gameIsOver() {
+
+        winChecker = new WinChecker(this.gameBoard);
+        return winChecker.gameIsOver();
+
+    }
+
+
+    public void tryMove() {
+
+        boolean invalidMove = true;
+
+        while (invalidMove) {
+
+            try {
+                gameBoard.placePlayersMove(currentPlayer);
+                invalidMove = false;
+
+            } catch (InvalidCellException | IndexOutOfBoundsException e) {
+                printStream.println("Not a valid move");
+                printStream.println("Please try again");
+
+            }
+        }
+    }
+
+    public void swapPlayer() {
+
+        currentPlayer = (currentPlayer == player1) ? player2 : player1;
+    }
+
+
 
     public void tryPlayAgain() {
 
@@ -170,34 +203,9 @@ public abstract class GameRunner {
         return currentPlayer;
     }
 
-    public void swapPlayer() {
-        currentPlayer = (currentPlayer == player1) ? player2 : player1;
-    }
 
-    public void tryMove() {
 
-        boolean invalidMove = true;
 
-        while (invalidMove) {
-
-            try {
-                gameBoard.placePlayersMove(currentPlayer);
-                invalidMove = false;
-
-            } catch (InvalidCellException | IndexOutOfBoundsException e) {
-                printStream.println("Not a valid move");
-                printStream.println("Please try again");
-
-            }
-        }
-    }
-
-    private Boolean gameIsOver() {
-
-        winChecker = new WinChecker(this.gameBoard);
-        return winChecker.gameIsOver();
-
-    }
 
 
 }

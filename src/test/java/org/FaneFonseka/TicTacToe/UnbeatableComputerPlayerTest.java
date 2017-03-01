@@ -50,8 +50,11 @@ public class UnbeatableComputerPlayerTest {
         fixedMoveComputerPlayerO = new FixedMoveComputerPlayer(MarkSymbol.O, point11,
                 point10, point20, point22);
 
-        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerO);
-        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerO);
+//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//
+        fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoardWithPoint02Blank);
+        fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
         gameBoard = new GameBoard();
         unbeatableComputerPlayer = new UnbeatableComputerPlayer(MarkSymbol.X, gameBoard);
@@ -94,7 +97,9 @@ public class UnbeatableComputerPlayerTest {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
-        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+
+        fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
         gameBoardFormatter.getFormattedGameBoard();
 
@@ -107,7 +112,9 @@ public class UnbeatableComputerPlayerTest {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
-        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+
+        fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
         gameBoardFormatter.getFormattedGameBoard();
 
@@ -125,7 +132,9 @@ public class UnbeatableComputerPlayerTest {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
-        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+
+        fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
         gameBoardFormatter.getFormattedGameBoard();
 
@@ -140,7 +149,9 @@ public class UnbeatableComputerPlayerTest {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
-        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
+
+        fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
         gameBoardFormatter.getFormattedGameBoard();
 

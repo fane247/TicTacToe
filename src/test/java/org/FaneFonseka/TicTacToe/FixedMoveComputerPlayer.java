@@ -28,5 +28,17 @@ public class FixedMoveComputerPlayer extends Player {
 
     }
 
+    void placeAllPlayersMoves(GameBoard gameBoard) throws InvalidCellException {
+
+        int movesSize = this.moves.size();
+
+        for (int i = 0; i < movesSize; i++) {
+
+            gameBoard.placePlayersMove(this);
+
+        }
+
+    }
+
 
 }

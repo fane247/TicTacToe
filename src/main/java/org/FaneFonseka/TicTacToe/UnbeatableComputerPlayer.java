@@ -154,8 +154,21 @@ public class UnbeatableComputerPlayer extends Player {
 
     public int evaluateGameBoard(GameBoard gameBoard) {
 
-        GameBoardEvaluator gameBoardEvaluator = new GameBoardEvaluator(gameBoard, maximisingPlayer);
-        int score = gameBoardEvaluator.evaluateBoard();
+        WinChecker winChecker = new WinChecker(gameBoard);
+
+        Boolean markSymbolHasWon = winChecker.markSymbolHasWon(maximisingPlayer);
+
+        int score = 0;
+
+        if (markSymbolHasWon && maximisingPlayer.equals(this.markSymbol)) {
+
+            score = 1000;
+
+        } else if (markSymbolHasWon && !maximisingPlayer.equals(this.markSymbol)) {
+
+            score = -1000;
+        }
+
         return score;
 
     }
@@ -164,8 +177,10 @@ public class UnbeatableComputerPlayer extends Player {
 
         GameBoard nextGameBoard = new GameBoard(gameBoard);
 
-        FixedMoveComputerPlayer fixedMoveComputerPlayer = new FixedMoveComputerPlayer(currentPlayer, move);
-        nextGameBoard.placePlayersMove(fixedMoveComputerPlayer);
+        int x = move.getX();
+        int y = move.getY();
+
+        nextGameBoard.getBoard().get(y).set(x, currentPlayer);
 
         return nextGameBoard;
 

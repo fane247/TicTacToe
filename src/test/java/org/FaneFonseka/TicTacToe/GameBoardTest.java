@@ -3,9 +3,11 @@ package org.FaneFonseka.TicTacToe;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.FaneFonseka.TicTacToe.MarkSymbol.BLANK;
 import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -29,14 +31,44 @@ public class GameBoardTest {
     }
 
     @Test
+    public void whenGivenAnotherGameBoardANewGameBoardIsCreatedWhichIsTheSameAsTheGivenGameBoard() {
+
+
+        List<List<MarkSymbol>> board = gameBoard.getBoard();
+
+        for (int i = 0; i < board.size(); i++) {
+
+            for (int j = 0; j < board.get(i).size(); j++) {
+
+                board.get(i).set(j, MarkSymbol.X);
+            }
+
+        }
+
+        System.out.println(gameBoardFormatter.getFormattedGameBoard());
+
+        GameBoard anotherGameBoard = new GameBoard(gameBoard);
+
+        assertEquals(anotherGameBoard, gameBoard);
+
+    }
+
+    @Test
     public void whenGameBoardIsCreatedAllSpacesAreBlank() throws InvalidCellException {
 
-        MarkSymbol blankMark = MarkSymbol.BLANK;
-        List<MarkSymbol> blankRow1 = Arrays.asList(blankMark, blankMark, blankMark);
-        List<MarkSymbol> blankRow2 = Arrays.asList(blankMark, blankMark, blankMark);
-        List<MarkSymbol> blankRow3 = Arrays.asList(blankMark, blankMark, blankMark);
+        List<List<MarkSymbol>> expectedBoard = new ArrayList<>();
 
-        List<List<MarkSymbol>> expectedBoard = Arrays.asList(blankRow1, blankRow2, blankRow3);
+        for (int i = 0; i < 3; i++) {
+
+            expectedBoard.add(new ArrayList<>());
+
+            for (int j = 0; j < 3; j++) {
+
+                expectedBoard.get(i).add(MarkSymbol.BLANK);
+
+            }
+
+        }
 
         List<List<MarkSymbol>> actualBoard = gameBoard.getBoard();
 
@@ -51,8 +83,6 @@ public class GameBoardTest {
         Player fixedMoveComputerPlayer = new FixedMoveComputerPlayer(X, move);
 
         gameBoard.placePlayersMove(fixedMoveComputerPlayer);
-
-//        gameBoardFormatter.getFormattedGameBoard();
 
         MarkSymbol markSymbolPlayedOnBoard = gameBoard.getCell(move.getX(), move.getY());
 
@@ -70,6 +100,7 @@ public class GameBoardTest {
         gameBoard.placePlayersMove(FixedMoveComputerPlayer);
         gameBoard.placePlayersMove(FixedMoveComputerPlayer);
 
+        //if no exception is thrown test fails
         fail();
 
     }

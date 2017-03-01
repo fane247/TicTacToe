@@ -42,7 +42,9 @@ class WinChecker {
     }
 
 
-    private Boolean markSymbolHasWon(MarkSymbol markSymbol) {
+    public Boolean markSymbolHasWon(MarkSymbol markSymbol) {
+
+        setAllLines();
 
         MarkSymbolCounter markSymbolCounterCurrentPlayerX = new MarkSymbolCounter(markSymbol);
         boolean MarkSymbolHasWon = false;
