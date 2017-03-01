@@ -13,53 +13,55 @@ public class GameBoardEvaluatorTest {
 
     private GameBoard gameBoard;
     private GameBoardEvaluator gameBoardEvaluator;
-    private List<List<Mark>> board;
+    private List<List<MarkSymbol>> board;
 
-//    @Before
-//    public void setup() {
-//
-//        gameBoard = new GameBoard();
-//        gameBoardEvaluator = new GameBoardEvaluator(gameBoard, MarkSymbol.X);
-//        board = gameBoard.getBoard();
-//
-//    }
-//
-//    @Test
-//    public void whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000() {
-//
-//        board.get(0).set(0, new Mark(MarkSymbol.X));
-//        board.get(0).set(1, new Mark(MarkSymbol.X));
-//        board.get(0).set(2, new Mark(MarkSymbol.X));
-//
-//        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-//        gameBoardFormatter.formatGameBoard();
-//
-//        int actualScore = gameBoardEvaluator.getScore3InARow();
-//
+    @Before
+    public void setup() {
+
+        gameBoard = new GameBoard();
+        gameBoardEvaluator = new GameBoardEvaluator(gameBoard, MarkSymbol.X);
+        board = gameBoard.getBoard();
+
+    }
+
+    @Test
+    public void whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000() {
+
+        board.get(0).set(0, MarkSymbol.X);
+        board.get(0).set(1, MarkSymbol.X);
+        board.get(0).set(2, MarkSymbol.X);
+
+        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
+        String formattedGameBoard = gameBoardFormatter.getFormattedGameBoard();
+//        System.out.println(formattedGameBoard);
+
+        int actualScore = gameBoardEvaluator.getScore3InARow();
+
 //        System.out.println(actualScore);
-//
-//        assert actualScore == 1000;
-//
-//    }
-//
-//
-//    @Test
-//    public void whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000() {
-//
-//        board.get(0).set(0, new Mark(MarkSymbol.O));
-//        board.get(0).set(1, new Mark(MarkSymbol.O));
-//        board.get(0).set(2, new Mark(MarkSymbol.O));
-//
-//        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-//        gameBoardFormatter.formatGameBoard();
-//
-//        int actualScore = gameBoardEvaluator.evaluateBoard();
-//
+
+        assert actualScore == 1000;
+
+    }
+
+
+    @Test
+    public void whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000() {
+
+        board.get(0).set(0, MarkSymbol.O);
+        board.get(0).set(1, MarkSymbol.O);
+        board.get(0).set(2, MarkSymbol.O);
+
+        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
+        String formattedGameBoard = gameBoardFormatter.getFormattedGameBoard();
+//        System.out.println(formattedGameBoard);
+
+        int actualScore = gameBoardEvaluator.evaluateBoard();
+
 //        System.out.println(actualScore);
-//
-//        assert actualScore == -1000;
-//
-//    }
+
+        assert actualScore == -1000;
+
+    }
 
 
 }

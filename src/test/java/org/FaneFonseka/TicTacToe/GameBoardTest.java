@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 
 /**
@@ -38,7 +40,7 @@ public class GameBoardTest {
 
         List<List<MarkSymbol>> actualBoard = gameBoard.getBoard();
 
-        assert expectedBoard.equals(actualBoard);
+        assertEquals(expectedBoard, actualBoard);
     }
 
     @Test
@@ -50,11 +52,11 @@ public class GameBoardTest {
 
         gameBoard.placePlayersMove(fixedMoveComputerPlayer);
 
-        gameBoardFormatter.getFormatedGameBoard();
+//        gameBoardFormatter.getFormattedGameBoard();
 
         MarkSymbol markSymbolPlayedOnBoard = gameBoard.getCell(move.getX(), move.getY());
 
-        assert markSymbolPlayedOnBoard.equals(fixedMoveComputerPlayer.markSymbol);
+        assertEquals(markSymbolPlayedOnBoard, fixedMoveComputerPlayer.markSymbol);
 
     }
 
@@ -67,6 +69,8 @@ public class GameBoardTest {
 
         gameBoard.placePlayersMove(FixedMoveComputerPlayer);
         gameBoard.placePlayersMove(FixedMoveComputerPlayer);
+
+        fail();
 
     }
 

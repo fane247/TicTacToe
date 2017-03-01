@@ -3,109 +3,52 @@ package org.FaneFonseka.TicTacToe;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
+import java.io.PrintStream;
 import java.util.Stack;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 /**
- * Created by Fane on 13/01/2017.
+ * Created by Fane on 25/02/2017.
  */
 public class GameRunnerTest {
 
+    private PrintStream printStream;
 
-    private GameRunner gameRunner;
-    private Player player1;
+    @Before
+    public void setup() {
+
+        printStream = new BlankPrintStream(new BlankOutPutStream());
+    }
 
     @Test
-    public void whenAHumanVsHumanGameIsRequestedBothPlayersAreHumanPlayers() {
+    public void whenSwapPlayerIsCalledCurrentPlayerSwapsToOtherPlayer() throws InvalidCellException {
 
         UserInput userInput = new UserInput() {
             @Override
             public int getInt() {
                 return 1;
             }
-        };
 
-        gameRunner = new GameRunner(userInput);
-
-        gameRunner.selectGameType();
-
-        player1 = gameRunner.getPlayer1();
-        Player player2 = gameRunner.getPlayer2();
-
-        assert (player1 instanceof HumanPlayer);
-        assert (player2 instanceof HumanPlayer);
-
-    }
-
-    @Test
-    public void whenAHumanVsComputerGameIsRequestedPlayerOneIsAHumanPlayerPlayerTwoIsAComputerPlayer() {
-
-        UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
-                return 3;
+            public String getString() {
+                return null;
             }
         };
 
-        gameRunner = new GameRunner(userInput);
+        GameRunner gameRunner = new HumanVsComputerGameRunner(userInput, printStream);
 
-        gameRunner.selectGameType();
+        gameRunner.setCurrentPlayer();
 
-        player1 = gameRunner.getPlayer1();
-        Player player2 = gameRunner.getPlayer2();
-
-        assert (player1 instanceof HumanPlayer);
-        assert (player2 instanceof UnbeatableComputerPlayer);
-
-    }
-
-    @Test
-    public void whenAComputerVsComputerGameIsRequestedBothPlayersAreUnbeatableComputerPlayers() {
-
-        UserInput userInput = new UserInput() {
-            @Override
-            public int getInt() {
-                return 2;
-            }
-        };
-
-        gameRunner = new GameRunner(userInput);
-
-        gameRunner.selectGameType();
-
-        player1 = gameRunner.getPlayer1();
-        Player player2 = gameRunner.getPlayer2();
-
-        assert (player1 instanceof UnbeatableComputerPlayer);
-        assert (player2 instanceof UnbeatableComputerPlayer);
-
-    }
-
-    @Test
-    public void whenSelectionForGameTypeIsInvalidQuestionIsAskedAgain() {
-
-        Stack<Integer> userInputList = new Stack<>();
-        userInputList.add(1);
-        userInputList.add(6);
-
-        UserInput userInput = new UserInput() {
-            @Override
-            public int getInt() {
-                return userInputList.pop();
-            }
-        };
-
-        gameRunner = new GameRunner(userInput);
-
-        gameRunner.trySetCurrentPlayer();
-
-        player1 = gameRunner.getPlayer1();
+        gameRunner.swapPlayer();
 
         Player currentPlayer = gameRunner.getCurrentPlayer();
 
-        assert player1 ==currentPlayer;
+        Player player2 = gameRunner.getPlayer2();
+
+        assertEquals(currentPlayer, player2);
+
+        //this assumes that player1 is current player. need to add set current player?
 
     }
 
@@ -117,41 +60,138 @@ public class GameRunnerTest {
             public int getInt() {
                 return 1;
             }
+
+            @Override
+            public String getString() {
+                return null;
+            }
         };
 
-        gameRunner = new GameRunner(userInput);
+        HumanVsHumanGameRunner humanVsHumanGameRunner = new HumanVsHumanGameRunner(userInput, printStream);
 
-        gameRunner.setCurrentPlayer();
+        humanVsHumanGameRunner.trySetCurrentPlayer();
 
-        player1 = gameRunner.getPlayer1();
+        Player player1 = humanVsHumanGameRunner.getPlayer1();
 
-        Player currentPlayer = gameRunner.getCurrentPlayer();
+        Player currentPlayer = humanVsHumanGameRunner.getCurrentPlayer();
 
         assertEquals(player1, currentPlayer);
 
     }
 
     @Test
-    public void whenSwapPlayerIsCalledCurrentPlayerSwapsToOtherPlayer() throws InvalidCellException {
+    public void playerToMakeFirstMoveHasXMarkSymbol() {
 
         UserInput userInput = new UserInput() {
             @Override
             public int getInt() {
                 return 1;
             }
+
+            @Override
+            public String getString() {
+                return null;
+            }
         };
 
-        gameRunner = new GameRunner(userInput);
+        HumanVsHumanGameRunner humanVsHumanGameRunner = new HumanVsHumanGameRunner(userInput, printStream);
 
-        gameRunner.setCurrentPlayer();
-        gameRunner.swapPlayer();
+        humanVsHumanGameRunner.trySetCurrentPlayer();
 
-        Player currentPlayer = gameRunner.getCurrentPlayer();
+        Player player1 = humanVsHumanGameRunner.getPlayer1();
 
-        Player player2 = gameRunner.getPlayer2();
-
-        assert currentPlayer == player2;
+        assertEquals(MarkSymbol.X, player1.markSymbol);
 
     }
+
+    @Test
+    public void whenGameIsOverUserIsAskedForRematch() throws InvalidCellException {
+
+        UserInput userInput = new UserInput() {
+            @Override
+            public int getInt() {
+                return 1;
+            }
+
+            @Override
+            public String getString() {
+                return "n";
+            }
+        };
+
+        ComputerVsComputerGameRunner computerVsComputerGameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
+
+        computerVsComputerGameRunner.trySetCurrentPlayer();
+
+        computerVsComputerGameRunner.startGame();
+
+        assertTrue(!computerVsComputerGameRunner.userWantsRematch);
+
+    }
+
+
+    @Test
+    public void whenStartGameIsCalledGameIsPlayedAndFinalStateOfGameBoardIsNotBlank() throws InvalidCellException {
+
+        UserInput userInput = new UserInput() {
+            @Override
+            public int getInt() {
+                return 1;
+            }
+
+            @Override
+            public String getString() {
+                return "n";
+            }
+        };
+
+        ComputerVsComputerGameRunner computerVsComputerGameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
+
+        computerVsComputerGameRunner.trySetCurrentPlayer();
+
+        computerVsComputerGameRunner.startGame();
+
+        GameBoard blankGameBoard = new GameBoard();
+
+        GameBoard finalGameBoard = computerVsComputerGameRunner.gameBoard;
+
+        assertNotEquals(finalGameBoard, blankGameBoard);
+
+    }
+
+    @Test
+    public void WhenUserGivesInvalidInputInResponseToRematchQuestionIsAskedAgain() throws InvalidCellException {
+
+        Stack<String> responses = new Stack<>();
+
+        responses.add("n");
+        responses.add("x");
+
+        UserInput userInput = new UserInput() {
+            @Override
+            public int getInt() {
+                return 1;
+            }
+
+            @Override
+            public String getString() {
+                return responses.pop();
+            }
+        };
+
+        ComputerVsComputerGameRunner computerVsComputerGameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
+
+        computerVsComputerGameRunner.trySetCurrentPlayer();
+
+        computerVsComputerGameRunner.startGame();
+
+        GameBoard blankGameBoard = new GameBoard();
+
+        GameBoard finalGameBoard = computerVsComputerGameRunner.gameBoard;
+
+        assertNotEquals(finalGameBoard, blankGameBoard);
+
+    }
+
 
 }

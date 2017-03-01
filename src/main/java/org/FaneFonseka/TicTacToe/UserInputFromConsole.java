@@ -7,14 +7,28 @@ import java.util.Scanner;
  */
 public class UserInputFromConsole implements UserInput{
 
+    private Scanner scanner;
+
+    public UserInputFromConsole() {
+
+        scanner = new Scanner(System.in);
+
+    }
+
     @Override
     public int getInt() {
-        Scanner scanner = new Scanner(System.in);
 
         return scanner.nextInt();
 
     }
 
+    @Override
+    public String getString() {
+
+        scanner.next();
+        return null;
+
+    }
 
 
 }

@@ -18,6 +18,7 @@ public class HumanPlayerTest {
 
         String userInput = "11";
 
+        //todo switch to userInput interface
         System.setIn(new ByteArrayInputStream(userInput.getBytes()));
 
         HumanPlayer humanPlayer = new HumanPlayer(MarkSymbol.X);
@@ -26,7 +27,7 @@ public class HumanPlayerTest {
 
         System.setOut(System.out);
 
-        System.out.println("Actual Moves" + actualMove);
+//        System.out.println("Actual Moves" + actualMove);
 
         Point expectedPoint = new Point(1, 1);
 

@@ -1,6 +1,5 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.awt.*;
 
 /**
  * Created by Fane on 12/01/2017.
@@ -18,18 +17,17 @@ public abstract class Player {
 
     public abstract Point getMove();
 
-
-    public Point getPosition() {
-        return position;
-
-    }
-
     //todo inconsistent naming
 
     MarkSymbol getMarkSymbol() {
 
         return this.markSymbol;
 
+    }
+
+    public void setMarkSymbol(MarkSymbol markSymbol) {
+
+        this.markSymbol = markSymbol;
     }
 
 

@@ -45,8 +45,8 @@ public class LineExtractorTest {
         gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerO);
         gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
-        System.out.println("starting GameBoard");
-        gameBoardFormatter.getFormatedGameBoard();
+//        System.out.println("starting GameBoard");
+        gameBoardFormatter.getFormattedGameBoard();
 
         List<MarkSymbol> col0 = Arrays.asList(MarkSymbol.X, MarkSymbol.X, MarkSymbol.BLANK);
         List<MarkSymbol> col1 = Arrays.asList(MarkSymbol.O, MarkSymbol.O, MarkSymbol.X);
