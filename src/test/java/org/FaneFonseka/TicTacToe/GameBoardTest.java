@@ -4,10 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import static org.FaneFonseka.TicTacToe.MarkSymbol.BLANK;
 import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -76,7 +74,7 @@ public class GameBoardTest {
     }
 
     @Test
-    public void whenPlaceMarkIsCalledPlayersMarkIsPlacedOnBoard() throws InvalidCellException {
+    public void whenPlaceMarkIsCalledPlayersMarkIsPlacedOnBoard() throws InvalidCellException, IllegalMoveException {
 
         Point move = new Point(0, 2);
 
@@ -91,7 +89,7 @@ public class GameBoardTest {
     }
 
     @Test(expected = InvalidCellException.class)
-    public void whenOccupiedCellIsChosenExceptionIsThrown() throws InvalidCellException {
+    public void whenOccupiedCellIsChosenExceptionIsThrown() throws InvalidCellException, IllegalMoveException {
 
         Player FixedMoveComputerPlayer = new FixedMoveComputerPlayer(X,
                 new Point(0, 0),

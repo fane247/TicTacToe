@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9dfb07b-832e-43de-857a-09108b6fbc4f" name="Default" comment="removed GameBoardEvaluator and checked">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
+    <list default="true" id="a9dfb07b-832e-43de-857a-09108b6fbc4f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/IllegalMoveException.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolCounter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkSymbolCounterTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameBoardEvaluator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameBoard.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameBoard.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameRunner.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/HumanPlayer.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/HumanPlayer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/MarkSymbolCounter.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/MarkSymbolCounter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/Player.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/Player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/WinChecker.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/WinChecker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$1.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$2.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$4.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$5.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$6.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/HumanPlayerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/HumanPlayerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/WinCheckerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/WinCheckerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Player.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" />
     </list>
@@ -50,21 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UnbeatableComputerPlayer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java">
+      <file leaf-file-name="LineExtractor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnbeatableComputerPlayerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="148">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -73,8 +72,28 @@
       <file leaf-file-name="WinChecker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="66">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinCheckerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineExtractorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,11 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolCounter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkSymbolCounterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolExtractor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkSymbolExtractorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardPrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormater.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbol.java" />
@@ -162,29 +176,34 @@
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MinMax.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MinMaxTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankOutPutStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankPrintStream.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ComputerVsComputerGameRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ComputerVsComputerGameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolCounter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/IllegalMoveException.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java" />
       </list>
     </option>
   </component>
@@ -358,74 +377,14 @@
       <recent name="org.FaneFonseka.TicTacToe" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UnbeatableComputerPlayerTest">
-    <configuration default="false" name="GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WinCheckerTest">
+    <configuration default="false" name="HumanPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TicTacToe" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameBoardTest" />
-      <option name="METHOD_NAME" value="whenGameBoardIsCreatedAllSpacesAreBlank" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameBoardEvaluatorTest" />
-      <option name="METHOD_NAME" value="whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameBoardEvaluatorTest" />
-      <option name="METHOD_NAME" value="whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameBoardEvaluatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameBoardEvaluatorTest" />
-      <option name="METHOD_NAME" value="whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000" />
+      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.HumanPlayerTest" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -439,12 +398,66 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UnbeatableComputerPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="GameGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameGenerator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TicTacToe" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TicTacToe" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.UnbeatableComputerPlayerTest" />
+      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.HumanPlayerTest" />
+      <option name="METHOD_NAME" value="whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
+      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameGeneratorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="WinCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
+      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.WinCheckerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -678,19 +691,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest.whenUserEntersCoordinatesInConsolePointIsReturnedWithEnteredCoordinates" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameBoardEvaluatorTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UnbeatableComputerPlayerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GameGenerator" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameGeneratorTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.WinCheckerTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UnbeatableComputerPlayerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GameBoardEvaluatorTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.WinCheckerTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GameGenerator" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GameGeneratorTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -901,39 +914,46 @@
       <option name="project" value="LOCAL" />
       <updated>1488361631244</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="removed GameBoardEvaluator, moved FixedMoveComputerPlayer into test folder and checked some classes had tests for all core methods.">
+      <created>1488371612149</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1488371612149</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameBoardEvaluatorTest - 2017.03.01 at 12h 17m 33s.xml">
-      <configuration name="GameBoardEvaluatorTest" configurationId="JUnit" />
+    <history-entry file="GameGeneratorTest - 2017.03.01 at 15h 23m 08s.xml">
+      <configuration name="GameGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardEvaluatorTest_whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000 - 2017.03.01 at 12h 16m 43s.xml">
-      <configuration name="GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMaximisingPlayerReturns1000" configurationId="JUnit" />
+    <history-entry file="GameGeneratorTest - 2017.03.01 at 15h 26m 39s.xml">
+      <configuration name="GameGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardEvaluatorTest_whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000 - 2017.03.01 at 12h 17m 06s.xml">
-      <configuration name="GameBoardEvaluatorTest.whenGivenABoardWith3InARowMarkSymbolOfMinimisingPlayerReturnsMinus1000" configurationId="JUnit" />
+    <history-entry file="GameGeneratorTest - 2017.03.01 at 15h 26m 52s.xml">
+      <configuration name="GameGeneratorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardTest_whenGameBoardIsCreatedAllSpacesAreBlank - 2017.03.01 at 10h 52m 14s.xml">
-      <configuration name="GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" configurationId="JUnit" />
+    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.01 at 15h 06m 22s.xml">
+      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardTest_whenGameBoardIsCreatedAllSpacesAreBlank - 2017.03.01 at 10h 53m 13s.xml">
-      <configuration name="GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" configurationId="JUnit" />
+    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.01 at 15h 06m 41s.xml">
+      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardTest_whenGameBoardIsCreatedAllSpacesAreBlank - 2017.03.01 at 10h 54m 51s.xml">
-      <configuration name="GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" configurationId="JUnit" />
+    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.01 at 15h 07m 13s.xml">
+      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardTest_whenGameBoardIsCreatedAllSpacesAreBlank - 2017.03.01 at 10h 55m 49s.xml">
-      <configuration name="GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" configurationId="JUnit" />
+    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.01 at 15h 07m 33s.xml">
+      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameBoardTest_whenGameBoardIsCreatedAllSpacesAreBlank - 2017.03.01 at 10h 57m 51s.xml">
-      <configuration name="GameBoardTest.whenGameBoardIsCreatedAllSpacesAreBlank" configurationId="JUnit" />
+    <history-entry file="WinCheckerTest - 2017.03.01 at 16h 16m 55s.xml">
+      <configuration name="WinCheckerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnbeatableComputerPlayerTest - 2017.03.01 at 12h 26m 58s.xml">
-      <configuration name="UnbeatableComputerPlayerTest" configurationId="JUnit" />
+    <history-entry file="WinCheckerTest - 2017.03.01 at 16h 17m 27s.xml">
+      <configuration name="WinCheckerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnbeatableComputerPlayerTest - 2017.03.01 at 12h 29m 41s.xml">
-      <configuration name="UnbeatableComputerPlayerTest" configurationId="JUnit" />
+    <history-entry file="WinCheckerTest - 2017.03.01 at 16h 19m 48s.xml">
+      <configuration name="WinCheckerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1033,7 +1053,8 @@
     <MESSAGE value="moved some functionality from Mark to MarkSymbol.&#10;Started merging line extractors." />
     <MESSAGE value="Consilidated all sub LineExtractors into LineExtractor and deleted Column, Row and Diagonal Line extractor. Deleted MarkSymbol extractor and edited code that depended on it." />
     <MESSAGE value="added replay option. added PrintStream parameter to GameRunner and GameGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added replay option. added PrintStream parameter to GameRunner and GameGenerator" />
+    <MESSAGE value="removed GameBoardEvaluator, moved FixedMoveComputerPlayer into test folder and checked some classes had tests for all core methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed GameBoardEvaluator, moved FixedMoveComputerPlayer into test folder and checked some classes had tests for all core methods." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1045,12 +1066,6 @@
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1060,9 +1075,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BoardLinesExtractorTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/RowLineExtractor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/DiagonalLineExtractor.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/DiagonalLineExtractorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/ColumnLineExtractorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/RowLineExtractorTest.java" />
@@ -1084,14 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolExtractor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Point.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1107,22 +1111,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Mark.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MinMax.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MinMaxTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/IllegalArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1134,14 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="140" column="8" lean-forward="false" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,68 +1176,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="94" column="73" lean-forward="false" selection-start-line="94" selection-start-column="73" selection-end-line="94" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3476">
-          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ComputerVsComputerGameRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1270,90 +1192,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="100" column="53" lean-forward="true" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1368,8 +1210,220 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+        <state relative-caret-position="313">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="122" column="6" lean-forward="false" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/IllegalMoveException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>

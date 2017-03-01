@@ -15,7 +15,7 @@ public class HumanVsComputerGameRunner extends GameRunner {
     @Override
     public void setPlayers() {
 
-        player1 = new HumanPlayer(MarkSymbol.X);
+        player1 = new HumanPlayer(MarkSymbol.X, this.userInput);
         player2 = new UnbeatableComputerPlayer(MarkSymbol.O, this.gameBoard);
     }
 }

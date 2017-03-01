@@ -30,7 +30,7 @@ public class UnbeatableComputerPlayerTest {
     private GameBoard gameBoard;
 
     @Before
-    public void setup() throws InvalidCellException {
+    public void setup() throws InvalidCellException, IllegalMoveException {
 
         gameBoardWithPoint02Blank = new GameBoard();
         gameBoardFormatter = new GameBoardFormatter(gameBoardWithPoint02Blank);
@@ -62,7 +62,7 @@ public class UnbeatableComputerPlayerTest {
 
 
     @Test
-    public void whenGivenAnEmptyBoardASpaceIsChosen() throws InvalidCellException {
+    public void whenGivenAnEmptyBoardASpaceIsChosen() throws InvalidCellException, IllegalMoveException {
 
         GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
@@ -93,7 +93,7 @@ public class UnbeatableComputerPlayerTest {
     }
 
     @Test
-    public void whenGameBoardHasWinnerOrNoSpacesLeftGameIsOverReturnsTrue() throws InvalidCellException {
+    public void whenGameBoardHasWinnerOrNoSpacesLeftGameIsOverReturnsTrue() throws InvalidCellException, IllegalMoveException {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
@@ -108,7 +108,7 @@ public class UnbeatableComputerPlayerTest {
     }
 
     @Test
-    public void whenGameIsOverEvaluateGameBoardReturnsScore() throws InvalidCellException {
+    public void whenGameIsOverEvaluateGameBoardReturnsScore() throws InvalidCellException, IllegalMoveException {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
@@ -127,8 +127,10 @@ public class UnbeatableComputerPlayerTest {
 
     }
 
+    //todo add test for gameboard where opponent winning board evaluates to -1000
+
     @Test
-    public void whenThereAreNoSpacesLeftOrThereIsAWinnerGetMaxMoveScoreReturnsScoreEvaluationOfBoard() throws InvalidCellException {
+    public void whenThereAreNoSpacesLeftOrThereIsAWinnerGetMaxMoveScoreReturnsScoreEvaluationOfBoard() throws InvalidCellException, IllegalMoveException {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
@@ -145,7 +147,7 @@ public class UnbeatableComputerPlayerTest {
     }
 
     @Test
-    public void whenThereAreNoSpacesLeftOrThereIsAWinnerGetMinMoveScoreReturnsScoreEvaluationOfBoard() throws InvalidCellException {
+    public void whenThereAreNoSpacesLeftOrThereIsAWinnerGetMinMoveScoreReturnsScoreEvaluationOfBoard() throws InvalidCellException, IllegalMoveException {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 

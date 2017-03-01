@@ -1,13 +1,14 @@
 package org.FaneFonseka.TicTacToe;
 
 import java.io.PrintStream;
+import java.util.InputMismatchException;
 
 /**
  * Created by Fane on 25/02/2017.
  */
 public abstract class GameRunner {
 
-    private final UserInput userInput;
+    public UserInput userInput;
     private final PrintStream printStream;
     public Player player1;
     public Player player2;
@@ -37,7 +38,7 @@ public abstract class GameRunner {
                 setCurrentPlayer();
                 isInvalidSelection = false;
 
-            } catch (IllegalArgumentException e) {
+            } catch (IllegalArgumentException | InputMismatchException e) {
 
                 printStream.println("Invalid selection");
                 printStream.println("please choose again");
@@ -129,7 +130,7 @@ public abstract class GameRunner {
                 gameBoard.placePlayersMove(currentPlayer);
                 invalidMove = false;
 
-            } catch (InvalidCellException | IndexOutOfBoundsException e) {
+            } catch (InvalidCellException | IndexOutOfBoundsException | IllegalMoveException | InputMismatchException e) {
                 printStream.println("Not a valid move");
                 printStream.println("Please try again");
 

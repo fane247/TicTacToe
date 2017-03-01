@@ -1,34 +1,40 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.awt.*;
-import java.util.Scanner;
-
 /**
  * Created by Fane on 23/01/2017.
  */
 public class HumanPlayer extends Player {
 
-    HumanPlayer(MarkSymbol markSymbol) {
+    private final UserInput userInput;
+
+    HumanPlayer(MarkSymbol markSymbol, UserInput userInput) {
         super(markSymbol);
+        this.userInput = userInput;
     }
 
     @Override
-    public Point getMove() {
+    public Point getMove() throws IllegalMoveException {
 
-        String move = getInput();
+        int move = getInput();
 
-        int x = Character.getNumericValue(move.charAt(0));
+        if (move >= 100 || move < 10) {
 
-        int y = Character.getNumericValue(move.charAt(1));
+            throw new IllegalMoveException();
+        }
+
+        int x = move % 10;
+        move /= 10;
+        int y = move % 10;
 
         return new Point(x, y);
 
     }
 
-    String getInput() {
-        Scanner scanner = new Scanner(System.in);
 
-        return scanner.nextLine();
+    int getInput() {
+
+        return userInput.getInt();
     }
+
 
 }

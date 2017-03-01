@@ -31,16 +31,6 @@ public class GameBoardFormatterTest {
     }
 
     @Test
-    public void whenGetLineIsCalledGameBoardLineIsReturnedWithPipeDelimiters() throws InvalidCellException {
-
-        String firstGameBoardLine = gameBoardFormatter.getFormattedLine(0);
-        String expectedGameBoardLine = " X | X | X ";
-
-        assertEquals(expectedGameBoardLine, firstGameBoardLine);
-
-    }
-
-    @Test
     public void whenPrintGameBoardIsCalledGameBoardIsPrintedToConsoleWithPipes() throws InvalidCellException {
 
         String actualOutput = gameBoardFormatter.getFormattedGameBoard();

@@ -2,8 +2,6 @@ package org.FaneFonseka.TicTacToe;
 
 import org.junit.Test;
 
-import java.awt.*;
-
 import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
 
 /**
@@ -12,7 +10,7 @@ import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
 public class FixedMoveComputerPlayerTest {
 
     @Test
-    public void whenSetMoveIsCalledAMoveIsPoppedFromMovesList() {
+    public void whenSetMoveIsCalledAMoveIsPoppedFromMovesList() throws IllegalMoveException {
 
         Point expectedMove = new Point(0, 0);
 

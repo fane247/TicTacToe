@@ -35,6 +35,11 @@ public class GameGeneratorTest {
             public String getString() {
                 return null;
             }
+
+            @Override
+            public void flush() {
+
+            }
         };
 
         gameGenerator = new GameGenerator(userInput, blankPrintStream);
@@ -58,6 +63,11 @@ public class GameGeneratorTest {
             public String getString() {
                 return null;
             }
+
+            @Override
+            public void flush() {
+
+            }
         };
 
         gameGenerator = new GameGenerator(userInput, blankPrintStream);
@@ -67,6 +77,33 @@ public class GameGeneratorTest {
 
         assertTrue(actualGameRunnerType instanceof HumanVsComputerGameRunner);
 
+    }
+
+    @Test
+    public void whenAComputerVsComputerGameIsRequestedAComputerVsComputerGameRunnerIsReturned() {
+
+        UserInput userInput = new UserInput() {
+            @Override
+            public int getInt() {
+                return 2;
+            }
+
+            @Override
+            public String getString() {
+                return null;
+            }
+
+            @Override
+            public void flush() {
+
+            }
+        };
+
+        gameGenerator = new GameGenerator(userInput, blankPrintStream);
+
+        GameRunner actualGameRunnerType = gameGenerator.tryGetGameRunnerType();
+
+        assertTrue(actualGameRunnerType instanceof ComputerVsComputerGameRunner);
     }
 
     @Test
@@ -86,6 +123,11 @@ public class GameGeneratorTest {
             public String getString() {
                 return null;
             }
+
+            @Override
+            public void flush() {
+
+            }
         };
 
         gameGenerator = new GameGenerator(userInput, blankPrintStream);
@@ -95,28 +137,5 @@ public class GameGeneratorTest {
         assertTrue(actualGameRunnerType instanceof HumanVsHumanGameRunner);
 
     }
-
-    @Test
-    public void whenAComputerVsComputerGameIsRequestedAComputerVsComputerGameRunnerIsReturned() {
-
-        UserInput userInput = new UserInput() {
-            @Override
-            public int getInt() {
-                return 2;
-            }
-
-            @Override
-            public String getString() {
-                return null;
-            }
-        };
-
-        gameGenerator = new GameGenerator(userInput, blankPrintStream);
-
-        GameRunner actualGameRunnerType = gameGenerator.tryGetGameRunnerType();
-
-        assertTrue(actualGameRunnerType instanceof ComputerVsComputerGameRunner);
-    }
-
 
 }

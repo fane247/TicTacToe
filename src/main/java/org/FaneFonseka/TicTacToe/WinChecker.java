@@ -46,12 +46,18 @@ class WinChecker {
 
         setAllLines();
 
-        MarkSymbolCounter markSymbolCounterCurrentPlayerX = new MarkSymbolCounter(markSymbol);
         boolean MarkSymbolHasWon = false;
 
         for (List<MarkSymbol> markSymbolList : allMarkSymbolLines) {
 
-            int markSymbolCount = markSymbolCounterCurrentPlayerX.countMarkSymbols(markSymbolList);
+            int markSymbolCount = 0;
+
+            for (MarkSymbol markSymbolInBoard : markSymbolList) {
+
+                if (markSymbolInBoard.equals(markSymbol)) {
+                    markSymbolCount++;
+                }
+            }
 
             MarkSymbolHasWon = markSymbolCount == 3;
 
@@ -67,13 +73,18 @@ class WinChecker {
 
     private boolean noSpacesLeft() {
 
-        MarkSymbolCounter markSymbolCounterBlank = new MarkSymbolCounter(MarkSymbol.BLANK);
-
         int blankCount = 0;
 
         for (List<MarkSymbol> markSymbolList : allMarkSymbolLines) {
 
-            blankCount += markSymbolCounterBlank.countMarkSymbols(markSymbolList);
+            for (MarkSymbol markSymbol : markSymbolList) {
+
+                if (markSymbol.equals(MarkSymbol.BLANK)) {
+
+                    blankCount += 1;
+                }
+            }
+
         }
 
         return blankCount == 0;
@@ -83,15 +94,16 @@ class WinChecker {
 
         String gameOverStatement = "";
 
-        if (xHasWon){
+        if (xHasWon) {
 
-          gameOverStatement = "X has won!";
+            gameOverStatement = "X has won!";
 
-        } if(oHasWon){
+        }
+        if (oHasWon) {
 
             gameOverStatement = "O has won!";
         }
-        if (!xHasWon && !oHasWon && noSpacesLeft){
+        if (!xHasWon && !oHasWon && noSpacesLeft) {
 
             gameOverStatement = "Tie Game!";
         }

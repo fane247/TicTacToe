@@ -15,7 +15,7 @@ public abstract class Player {
     }
 
 
-    public abstract Point getMove();
+    public abstract Point getMove() throws IllegalMoveException;
 
     //todo inconsistent naming
 

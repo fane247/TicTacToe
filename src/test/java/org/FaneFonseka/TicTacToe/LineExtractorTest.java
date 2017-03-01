@@ -22,7 +22,7 @@ public class LineExtractorTest {
     private GameBoardFormatter gameBoardFormatter;
 
     @Before
-    public void setup() throws InvalidCellException {
+    public void setup() throws InvalidCellException, IllegalMoveException {
 
         gameBoard = new GameBoard();
         gameBoardFormatter = new GameBoardFormatter(gameBoard);
@@ -42,13 +42,9 @@ public class LineExtractorTest {
         fixedMoveComputerPlayerO = new FixedMoveComputerPlayer(MarkSymbol.O, point11,
                 point10, point20, point22);
 
-//        gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerO);
-//        gameBoard.placeAllPlayersMoves(fixedMoveComputerPlayerX);
-
         fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoard);
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoard);
 
-//        System.out.println("starting GameBoard");
         gameBoardFormatter.getFormattedGameBoard();
 
         List<MarkSymbol> col0 = Arrays.asList(MarkSymbol.X, MarkSymbol.X, MarkSymbol.BLANK);

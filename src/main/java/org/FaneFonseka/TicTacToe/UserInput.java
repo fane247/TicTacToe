@@ -8,4 +8,6 @@ public interface UserInput {
     int getInt();
 
     String getString();
+
+    void flush();
 }

@@ -17,7 +17,7 @@ class GameBoardFormatter {
     }
 
 
-    String getFormattedLine(int rowIndex) {
+    private String getFormattedLine(int rowIndex) {
 
 
         StringJoiner stringJoiner = new StringJoiner("|");

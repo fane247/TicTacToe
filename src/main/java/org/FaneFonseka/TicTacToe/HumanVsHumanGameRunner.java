@@ -16,8 +16,8 @@ public class HumanVsHumanGameRunner extends GameRunner {
     @Override
     public void setPlayers() {
 
-        player1 = new HumanPlayer(MarkSymbol.X);
-        player2 = new HumanPlayer(MarkSymbol.O);
+        player1 = new HumanPlayer(MarkSymbol.X, this.userInput);
+        player2 = new HumanPlayer(MarkSymbol.O, this.userInput);
 
     }
 

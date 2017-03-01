@@ -1,6 +1,5 @@
 package org.FaneFonseka.TicTacToe;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +59,7 @@ class GameBoard {
 
     }
 
-    void placePlayersMove(Player player) throws InvalidCellException {
+    void placePlayersMove(Player player) throws InvalidCellException, IllegalMoveException {
         Point move = player.getMove();
 
         if (cellIsOccupied(move)) {

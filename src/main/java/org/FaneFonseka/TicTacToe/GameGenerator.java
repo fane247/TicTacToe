@@ -1,6 +1,7 @@
 package org.FaneFonseka.TicTacToe;
 
 import java.io.PrintStream;
+import java.util.InputMismatchException;
 
 /**
  * Created by Fane on 13/01/2017.
@@ -11,13 +12,13 @@ public class GameGenerator {
     private GameBoard gameBoard;
     private Player player1;
     private Player player2;
-    private UserInput userInputFromConsole;
+    private UserInput userInput;
 
     GameGenerator(UserInput userInput, PrintStream printStream) {
 
         this.printStream = printStream;
         this.gameBoard = new GameBoard();
-        this.userInputFromConsole = userInput;
+        this.userInput = userInput;
     }
 
     public GameRunner tryGetGameRunnerType() {
@@ -32,12 +33,12 @@ public class GameGenerator {
                 gameRunner = getGameRunnerType();
                 isInvalidSelection = false;
 
-            } catch (IllegalArgumentException e) {
+            } catch (IllegalArgumentException | InputMismatchException e) {
 
                 printStream.println("Invalid selection");
                 printStream.println("please choose again");
                 printStream.println();
-
+                userInput.flush();
             }
         }
 
@@ -55,24 +56,24 @@ public class GameGenerator {
         printStream.println("3. Human vs Computer");
         printStream.println();
 
-        int selection = userInputFromConsole.getInt();
+        int selection = userInput.getInt();
 
         GameRunner gameRunner;
 
         switch (selection) {
 
             case 1:
-                gameRunner = new HumanVsHumanGameRunner(userInputFromConsole, printStream);
+                gameRunner = new HumanVsHumanGameRunner(userInput, printStream);
                 printStream.println("1. Human vs Human selected");
                 break;
 
             case 2:
-                gameRunner = new ComputerVsComputerGameRunner(userInputFromConsole, printStream);
+                gameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
                 printStream.println("2. Computer vs Computer selected");
                 break;
 
             case 3:
-                gameRunner = new HumanVsComputerGameRunner(userInputFromConsole, printStream);
+                gameRunner = new HumanVsComputerGameRunner(userInput, printStream);
                 printStream.println("3. Human vs Computer selected");
                 break;
 
@@ -84,28 +85,11 @@ public class GameGenerator {
 
     }
 
-
-    public void setPlayer1(Player player) {
-
-        player1 = player;
-
-    }
-
-
-    public void setPlayer2(Player player) {
-
-        player2 = player;
-    }
-
-    public Player getPlayer1() {
-        return player1;
-    }
-
     public static void main(String[] args) throws InvalidCellException {
 
         UserInputFromConsole userInputFromConsole = new UserInputFromConsole();
         GameGenerator gameGenerator = new GameGenerator(userInputFromConsole, System.out);
-        GameRunner gameRunnerType = gameGenerator.getGameRunnerType();
+        GameRunner gameRunnerType = gameGenerator.tryGetGameRunnerType();
         gameRunnerType.trySetCurrentPlayer();
         gameRunnerType.startGame();
     }

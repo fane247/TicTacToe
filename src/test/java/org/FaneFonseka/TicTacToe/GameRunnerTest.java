@@ -34,6 +34,11 @@ public class GameRunnerTest {
             public String getString() {
                 return null;
             }
+
+            @Override
+            public void flush() {
+
+            }
         };
 
         HumanVsHumanGameRunner humanVsHumanGameRunner = new HumanVsHumanGameRunner(userInput, printStream);
@@ -61,6 +66,11 @@ public class GameRunnerTest {
             @Override
             public String getString() {
                 return null;
+            }
+
+            @Override
+            public void flush() {
+
             }
         };
 
@@ -92,6 +102,11 @@ public class GameRunnerTest {
             public String getString() {
                 return null;
             }
+
+            @Override
+            public void flush() {
+
+            }
         };
 
         HumanVsHumanGameRunner humanVsHumanGameRunner = new HumanVsHumanGameRunner(userInput, printStream);
@@ -116,6 +131,11 @@ public class GameRunnerTest {
             @Override
             public String getString() {
                 return "n";
+            }
+
+            @Override
+            public void flush() {
+
             }
         };
 
@@ -145,6 +165,11 @@ public class GameRunnerTest {
             @Override
             public String getString() {
                 return "n";
+            }
+
+            @Override
+            public void flush() {
+
             }
         };
 
@@ -177,6 +202,11 @@ public class GameRunnerTest {
             public String getString() {
                 return responses.pop();
             }
+
+            @Override
+            public void flush() {
+
+            }
         };
 
         ComputerVsComputerGameRunner computerVsComputerGameRunner = new ComputerVsComputerGameRunner(userInput, printStream);
@@ -192,6 +222,9 @@ public class GameRunnerTest {
         assertNotEquals(finalGameBoard, blankGameBoard);
 
     }
+
+    // TODO: 01/03/2017 check all subclasses are represented in the tests
+    // TODO: 01/03/2017 replay option throwing null pointer exception
 
 
 }
