@@ -2,6 +2,8 @@ package org.FaneFonseka.TicTacToe;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by Fane on 16/01/2017.
  */
@@ -11,9 +13,9 @@ public class MarkSymbolTest {
     public void whenGetMarkNameIsCalledUserFriendlyMarkNameIsReturned() {
 
 
-        assert MarkSymbol.X.getMarkName().equals(" X ");
-        assert MarkSymbol.O.getMarkName().equals(" O ");
-        assert MarkSymbol.BLANK.getMarkName().equals("   ");
+        assertEquals(" X ", MarkSymbol.X.getMarkName());
+        assertEquals(" O ", MarkSymbol.O.getMarkName());
+        assertEquals("   ", MarkSymbol.BLANK.getMarkName());
 
     }
 

@@ -29,7 +29,7 @@ public class UnbeatableComputerPlayer extends Player {
         Point bestMove = null;
 
         try {
-            bestMove = getMinMax(gameBoard);
+            bestMove = getMinMax();
         } catch (InvalidCellException e) {
             e.getMessage();
         }
@@ -38,7 +38,7 @@ public class UnbeatableComputerPlayer extends Player {
     }
 
 
-    public Point getMinMax(GameBoard gameBoard) throws InvalidCellException {
+    public Point getMinMax() throws InvalidCellException {
 
         ArrayList<Point> availableSpaces = getAvailableSpaces(gameBoard);
 
@@ -152,19 +152,20 @@ public class UnbeatableComputerPlayer extends Player {
 
     }
 
-    public int evaluateGameBoard(GameBoard gameBoard) {
+    private int evaluateGameBoard(GameBoard gameBoard) {
 
         WinChecker winChecker = new WinChecker(gameBoard);
 
-        Boolean markSymbolHasWon = winChecker.markSymbolHasWon(maximisingPlayer);
+        Boolean maximisingPlayerHasWon = winChecker.markSymbolHasWon(maximisingPlayer);
+        Boolean minimisingPlayerHasWon = winChecker.markSymbolHasWon(minimisingPlayer);
 
         int score = 0;
 
-        if (markSymbolHasWon && maximisingPlayer.equals(this.markSymbol)) {
+        if (maximisingPlayerHasWon) {
 
             score = 1000;
 
-        } else if (markSymbolHasWon && !maximisingPlayer.equals(this.markSymbol)) {
+        } else if (minimisingPlayerHasWon) {
 
             score = -1000;
         }

@@ -8,7 +8,6 @@ import java.util.List;
  */
 public class LineExtractor {
 
-
     final List<List<MarkSymbol>> board;
     final GameBoard gameBoard;
     private List<List<MarkSymbol>> allLines;
