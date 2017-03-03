@@ -17,7 +17,7 @@ public class GameGenerator {
         this.userInput = userInput;
     }
 
-    public GameRunner tryGetGameRunnerType() {
+    GameRunner tryGetGameRunnerType() {
 
         boolean isInvalidSelection = true;
 

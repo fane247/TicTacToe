@@ -39,7 +39,7 @@ public class UnbeatableComputerPlayer extends Player {
     }
 
 
-    public Point getMinMax() throws InvalidCellException {
+    Point getMinMax() throws InvalidCellException {
 
         ArrayList<Point> availableSpaces = getAvailableSpaces(gameBoard);
 
@@ -67,7 +67,7 @@ public class UnbeatableComputerPlayer extends Player {
     }
 
 
-    public Integer getMaxMoveScore(GameBoard gameBoard) throws InvalidCellException {
+    Integer getMaxMoveScore(GameBoard gameBoard) throws InvalidCellException {
 
         if (gameIsOver(gameBoard)) {
             return evaluateGameBoard(gameBoard);
@@ -88,7 +88,7 @@ public class UnbeatableComputerPlayer extends Player {
         return Collections.max(bestMoves);
     }
 
-    public Integer getMinMoveScore(GameBoard gameBoard) throws InvalidCellException {
+    Integer getMinMoveScore(GameBoard gameBoard) throws InvalidCellException {
 
         if (gameIsOver(gameBoard)) {
             return evaluateGameBoard(gameBoard);
@@ -110,7 +110,7 @@ public class UnbeatableComputerPlayer extends Player {
     }
 
 
-    public ArrayList<Point> getAvailableSpaces(GameBoard gameBoard) {
+    ArrayList<Point> getAvailableSpaces(GameBoard gameBoard) {
 
         ArrayList<Point> availableSpaces = new ArrayList<>();
 
@@ -142,7 +142,7 @@ public class UnbeatableComputerPlayer extends Player {
     }
 
 
-    public boolean gameIsOver(GameBoard gameBoard) {
+    boolean gameIsOver(GameBoard gameBoard) {
 
         WinChecker winChecker = new WinChecker(gameBoard);
 
@@ -172,7 +172,7 @@ public class UnbeatableComputerPlayer extends Player {
 
     }
 
-    public GameBoard getNextGameBoard(GameBoard gameBoard, Point move) throws InvalidCellException {
+    private GameBoard getNextGameBoard(GameBoard gameBoard, Point move) throws InvalidCellException {
 
         GameBoard nextGameBoard = new GameBoard(gameBoard);
 

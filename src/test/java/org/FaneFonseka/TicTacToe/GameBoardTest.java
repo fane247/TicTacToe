@@ -82,7 +82,7 @@ public class GameBoardTest {
 
         gameBoard.placePlayersMove(fixedMoveComputerPlayer);
 
-        MarkSymbol markSymbolPlayedOnBoard = gameBoard.getCell(move.getX(), move.getY());
+        MarkSymbol markSymbolPlayedOnBoard = gameBoard.getBoard().get(move.getY()).get(move.getX());
 
         assertEquals(markSymbolPlayedOnBoard, fixedMoveComputerPlayer.markSymbol);
 

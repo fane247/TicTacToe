@@ -8,14 +8,14 @@ import java.util.InputMismatchException;
  */
 public abstract class GameRunner {
 
-    public UserInput userInput;
+    UserInput userInput;
     private final PrintStream printStream;
-    public Player player1;
-    public Player player2;
+    Player player1;
+    Player player2;
     public GameBoard gameBoard;
     private Player currentPlayer;
     private WinChecker winChecker;
-    public Boolean userWantsRematch;
+    Boolean userWantsRematch;
 
     public GameRunner(UserInput userInput, PrintStream printStream) {
 
@@ -26,9 +26,9 @@ public abstract class GameRunner {
         setPlayers();
     }
 
-    public abstract void setPlayers();
+    abstract void setPlayers();
 
-    public void trySetCurrentPlayer() {
+    void trySetCurrentPlayer() {
 
         boolean isInvalidSelection = true;
 
@@ -49,7 +49,7 @@ public abstract class GameRunner {
 
     }
 
-    public void setCurrentPlayer() {
+    private void setCurrentPlayer() {
 
         printStream.println("Who you like to go first?");
         printStream.println("Please select a number");
@@ -83,7 +83,7 @@ public abstract class GameRunner {
 
     }
 
-    public void startGame() throws InvalidCellException {
+    void startGame() throws InvalidCellException {
 
         GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
         userWantsRematch = true;
@@ -119,7 +119,7 @@ public abstract class GameRunner {
     }
 
 
-    public void tryMove() {
+    private void tryMove() {
 
         boolean invalidMove = true;
 
@@ -138,14 +138,13 @@ public abstract class GameRunner {
         }
     }
 
-    public void swapPlayer() {
+    void swapPlayer() {
 
         currentPlayer = (currentPlayer == player1) ? player2 : player1;
     }
 
 
-
-    public void tryPlayAgain() {
+    private void tryPlayAgain() {
 
         boolean isInvalidSelection = true;
 
@@ -196,15 +195,15 @@ public abstract class GameRunner {
     }
 
 
-    public Player getPlayer1() {
+    Player getPlayer1() {
         return player1;
     }
 
-    public Player getPlayer2() {
+    Player getPlayer2() {
         return player2;
     }
 
-    public Player getCurrentPlayer() {
+    Player getCurrentPlayer() {
         return currentPlayer;
     }
 

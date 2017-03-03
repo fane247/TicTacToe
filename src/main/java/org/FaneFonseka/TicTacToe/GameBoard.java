@@ -42,7 +42,7 @@ class GameBoard {
     }
 
 
-    public void clearBoard() {
+    void clearBoard() {
 
         board = new ArrayList<>();
 
@@ -95,7 +95,7 @@ class GameBoard {
     }
 
 
-    MarkSymbol getCell(int x, int y) {
+    private MarkSymbol getCell(int x, int y) {
 
         return board.get(y).get(x);
     }

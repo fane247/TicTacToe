@@ -16,13 +16,13 @@ public class Point {
     }
 
 
-    public int getY() {
+    int getY() {
 
         return y;
     }
 
 
-    public int getX() {
+    int getX() {
 
         return x;
     }

@@ -16,12 +16,12 @@ public class HumanPlayerTest {
         UserInput userInput1 = new UserInput() {
             @Override
             public int getInt() {
-                return 11;
+                return 0;
             }
 
             @Override
             public String getString() {
-                return null;
+                return "11";
             }
 
             @Override
@@ -46,12 +46,12 @@ public class HumanPlayerTest {
         UserInput userInput1 = new UserInput() {
             @Override
             public int getInt() {
-                return 11;
+                return 0;
             }
 
             @Override
             public String getString() {
-                return null;
+                return "11";
             }
 
             @Override
@@ -81,7 +81,7 @@ public class HumanPlayerTest {
 
             @Override
             public String getString() {
-                return "01";
+                return "100";
             }
 
             @Override

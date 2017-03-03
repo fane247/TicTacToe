@@ -223,8 +223,4 @@ public class GameRunnerTest {
 
     }
 
-    // TODO: 01/03/2017 check all subclasses are represented in the tests
-    // TODO: 01/03/2017 replay option throwing null pointer exception
-
-
 }

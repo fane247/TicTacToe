@@ -60,8 +60,6 @@ public class WinCheckerTest {
         }
 
         GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-        String formatedGameBoard = gameBoardFormatter.getFormattedGameBoard();
-//        System.out.println(formatedGameBoard);
 
         WinChecker winChecker = new WinChecker(gameBoard);
 

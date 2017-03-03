@@ -6,8 +6,6 @@ package org.FaneFonseka.TicTacToe;
  */
 public abstract class Player {
 
-    protected Point position;
-
     protected MarkSymbol markSymbol;
 
     Player(MarkSymbol markSymbol) {
@@ -15,7 +13,7 @@ public abstract class Player {
     }
 
 
-    public abstract Point getMove() throws IllegalMoveException;
+    protected abstract Point getMove() throws IllegalMoveException;
 
 
     MarkSymbol getMarkSymbol() {
@@ -24,17 +22,10 @@ public abstract class Player {
 
     }
 
-    public void setMarkSymbol(MarkSymbol markSymbol) {
+    protected void setMarkSymbol(MarkSymbol markSymbol) {
 
         this.markSymbol = markSymbol;
     }
 
 
-    public int getX() {
-        return position.getX();
-    }
-
-    public int getY() {
-        return position.getY();
-    }
 }

@@ -6,10 +6,10 @@ import java.util.List;
 /**
  * Created by Fane on 19/01/2017.
  */
-public class LineExtractor {
+class LineExtractor {
 
-    final List<List<MarkSymbol>> board;
-    final GameBoard gameBoard;
+    private final List<List<MarkSymbol>> board;
+    public final GameBoard gameBoard;
     private List<List<MarkSymbol>> allLines;
 
     LineExtractor(GameBoard gameBoard) {
@@ -20,7 +20,7 @@ public class LineExtractor {
     }
 
 
-    public List<List<MarkSymbol>> getAllLines() {
+    List<List<MarkSymbol>> getAllLines() {
 
         allLines = new ArrayList<>();
         getColumns();

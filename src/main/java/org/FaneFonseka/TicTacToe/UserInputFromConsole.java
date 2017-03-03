@@ -9,7 +9,8 @@ public class UserInputFromConsole implements UserInput{
 
     private Scanner scanner;
 
-    public UserInputFromConsole() {
+
+    UserInputFromConsole() {
 
         scanner = new Scanner(System.in);
 
