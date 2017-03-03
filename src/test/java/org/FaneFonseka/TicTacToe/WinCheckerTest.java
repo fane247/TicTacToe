@@ -59,8 +59,6 @@ public class WinCheckerTest {
 
         }
 
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-
         WinChecker winChecker = new WinChecker(gameBoard);
 
         assertTrue(winChecker.gameIsOver());

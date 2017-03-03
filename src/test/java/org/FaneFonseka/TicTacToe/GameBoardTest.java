@@ -18,13 +18,11 @@ import static org.junit.Assert.fail;
 public class GameBoardTest {
 
     private GameBoard gameBoard;
-    private GameBoardFormatter gameBoardFormatter;
 
     @Before
     public void setUp() {
 
         gameBoard = new GameBoard();
-        gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
     }
 
@@ -42,8 +40,6 @@ public class GameBoardTest {
             }
 
         }
-
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
 
         GameBoard anotherGameBoard = new GameBoard(gameBoard);
 
@@ -117,15 +113,11 @@ public class GameBoardTest {
 
         }
 
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
-
         GameBoard blankGameBoard = new GameBoard();
 
         gameBoard.clearBoard();
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
 
         assertEquals(blankGameBoard, gameBoard);
-
 
     }
 

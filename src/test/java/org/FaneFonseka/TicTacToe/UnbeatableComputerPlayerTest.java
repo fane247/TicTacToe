@@ -15,7 +15,6 @@ import static org.junit.Assert.*;
 public class UnbeatableComputerPlayerTest {
 
     private GameBoard gameBoardWithPoint02Blank;
-    private GameBoardFormatter gameBoardFormatter;
     private Point point00;
     private Point point01;
     private Point point02;
@@ -34,7 +33,6 @@ public class UnbeatableComputerPlayerTest {
     public void setup() throws InvalidCellException, IllegalMoveException {
 
         gameBoardWithPoint02Blank = new GameBoard();
-        gameBoardFormatter = new GameBoardFormatter(gameBoardWithPoint02Blank);
 
         point00 = new Point(0, 0);
         point01 = new Point(0, 1);
@@ -51,9 +49,6 @@ public class UnbeatableComputerPlayerTest {
         fixedMoveComputerPlayerO = new FixedMoveComputerPlayer(MarkSymbol.O, point11,
                 point10, point20, point22);
 
-//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerO);
-//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
-//
         fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoardWithPoint02Blank);
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
@@ -102,8 +97,6 @@ public class UnbeatableComputerPlayerTest {
 
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
-        gameBoardFormatter.getFormattedGameBoard();
-
         Integer score = unbeatableComputerPlayer.getMaxMoveScore(gameBoardWithPoint02Blank);
 
         assertTrue(score == 1000);
@@ -116,8 +109,6 @@ public class UnbeatableComputerPlayerTest {
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
 
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
-
-        gameBoardFormatter.getFormattedGameBoard();
 
         Integer score = unbeatableComputerPlayer.getMinMoveScore(gameBoardWithPoint02Blank);
 
@@ -132,8 +123,6 @@ public class UnbeatableComputerPlayerTest {
 
         fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
-
         Integer score = unbeatableComputerPlayer.getMinMoveScore(gameBoardWithPoint02Blank);
 
         assertTrue(score == -1000);
@@ -144,7 +133,6 @@ public class UnbeatableComputerPlayerTest {
     public void whenGivenABoardWithOneSpaceThatGivesAWinAndOneThatGivesALossWinSpaceIsChosen() throws InvalidCellException {
 
         gameBoardWithPoint02Blank.getBoard().get(0).set(1, MarkSymbol.BLANK);
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
 
         UnbeatableComputerPlayer unbeatableComputerPlayer = new UnbeatableComputerPlayer(MarkSymbol.X, gameBoardWithPoint02Blank);
 
@@ -166,9 +154,6 @@ public class UnbeatableComputerPlayerTest {
 
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithTwoWaysToWinForPlayer);
         fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoardWithTwoWaysToWinForPlayer);
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoardWithTwoWaysToWinForPlayer);
-
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
 
         unbeatableComputerPlayer = new UnbeatableComputerPlayer(MarkSymbol.X, gameBoardWithTwoWaysToWinForPlayer);
 
@@ -192,9 +177,6 @@ public class UnbeatableComputerPlayerTest {
 
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithTwoWaysToWinForPlayer);
         fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoardWithTwoWaysToWinForPlayer);
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoardWithTwoWaysToWinForPlayer);
-
-        System.out.println(gameBoardFormatter.getFormattedGameBoard());
 
         unbeatableComputerPlayer = new UnbeatableComputerPlayer(MarkSymbol.X, gameBoardWithTwoWaysToWinForPlayer);
 
@@ -206,7 +188,6 @@ public class UnbeatableComputerPlayerTest {
 
         assertThat(actualMove, anyOf(is(point1WithTwoWaysToWinForOpponent), is(point2WithTwoWaysToWinForOpponent),
                 is(point3WithTwoWaysToWinForOpponent)));
-
 
     }
 

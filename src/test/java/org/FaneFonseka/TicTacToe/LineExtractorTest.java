@@ -16,16 +16,12 @@ import static org.junit.Assert.*;
 public class LineExtractorTest {
 
     private List<List<MarkSymbol>> expectedAllLines;
-    private FixedMoveComputerPlayer fixedMoveComputerPlayerX;
-    private FixedMoveComputerPlayer fixedMoveComputerPlayerO;
     private GameBoard gameBoard;
-    private GameBoardFormatter gameBoardFormatter;
 
     @Before
     public void setup() throws InvalidCellException, IllegalMoveException {
 
         gameBoard = new GameBoard();
-        gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
         Point point00 = new Point(0, 0);
         Point point01 = new Point(0, 1);
@@ -37,15 +33,13 @@ public class LineExtractorTest {
         Point point22 = new Point(2, 2);
         Point point21 = new Point(2, 1);
 
-        fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(X, point00, point01,
+        FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(X, point00, point01,
                 point12, point21);
-        fixedMoveComputerPlayerO = new FixedMoveComputerPlayer(MarkSymbol.O, point11,
+        FixedMoveComputerPlayer fixedMoveComputerPlayerO = new FixedMoveComputerPlayer(MarkSymbol.O, point11,
                 point10, point20, point22);
 
         fixedMoveComputerPlayerO.placeAllPlayersMoves(gameBoard);
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoard);
-
-        gameBoardFormatter.getFormattedGameBoard();
 
         List<MarkSymbol> col0 = Arrays.asList(MarkSymbol.X, MarkSymbol.X, MarkSymbol.BLANK);
         List<MarkSymbol> col1 = Arrays.asList(MarkSymbol.O, MarkSymbol.O, MarkSymbol.X);

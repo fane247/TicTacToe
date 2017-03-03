@@ -13,12 +13,11 @@ import static org.junit.Assert.assertEquals;
 public class GameBoardFormatterTest {
 
     private GameBoardFormatter gameBoardFormatter;
-    private GameBoard gameBoard;
 
     @Before
     public void setup(){
 
-        gameBoard = new GameBoard();
+        GameBoard gameBoard = new GameBoard();
         gameBoardFormatter = new GameBoardFormatter(gameBoard);
 
         List<List<MarkSymbol>> board = gameBoard.getBoard();

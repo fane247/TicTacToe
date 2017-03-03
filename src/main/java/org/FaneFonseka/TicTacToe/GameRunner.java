@@ -160,9 +160,6 @@ public abstract class GameRunner {
                 printStream.println("please choose again");
                 printStream.println();
 
-                // TODO: 03/03/2017 check this is fully manually tested i.e does it need to be flushed
-
-
             }
         }
 
