@@ -103,4 +103,30 @@ public class GameBoardTest {
 
     }
 
+    @Test
+    public void whenClearBoardIsCalledAllSpacesOnBoardBecomeBlank() {
+
+        List<List<MarkSymbol>> board = gameBoard.getBoard();
+
+        for (int i = 0; i < board.size(); i++) {
+
+            for (int j = 0; j < board.get(i).size(); j++) {
+
+                board.get(i).set(j, MarkSymbol.X);
+            }
+
+        }
+
+        System.out.println(gameBoardFormatter.getFormattedGameBoard());
+
+        GameBoard blankGameBoard = new GameBoard();
+
+        gameBoard.clearBoard();
+        System.out.println(gameBoardFormatter.getFormattedGameBoard());
+
+        assertEquals(blankGameBoard, gameBoard);
+
+
+    }
+
 }

@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import java.util.List;
 
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by Fane on 23/01/2017.
  */
@@ -29,13 +32,9 @@ public class WinCheckerTest {
 
         }
 
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-        String formatedGameBoard = gameBoardFormatter.getFormattedGameBoard();
-//        System.out.println(formatedGameBoard);
-
         WinChecker winChecker = new WinChecker(gameBoard);
 
-        assert winChecker.gameIsOver();
+        assertTrue(winChecker.gameIsOver());
 
     }
 
@@ -66,12 +65,12 @@ public class WinCheckerTest {
 
         WinChecker winChecker = new WinChecker(gameBoard);
 
-        assert winChecker.gameIsOver();
+        assertTrue(winChecker.gameIsOver());
 
     }
 
     @Test
-    public void whenGameBoardHasThreeOInARowAnnounceWinnerReturnsOHasWon() {
+    public void whenGameBoardHasThreeOInARowGetWinnerReturnsOHasWon() {
 
         GameBoard gameBoard = new GameBoard();
 
@@ -99,21 +98,15 @@ public class WinCheckerTest {
 
         }
 
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-        String formattedGameBoard = gameBoardFormatter.getFormattedGameBoard();
-//        System.out.println(formattedGameBoard);
-
         WinChecker winChecker = new WinChecker(gameBoard);
 
         winChecker.gameIsOver();
 
-        String actualGameOverStatement = winChecker.announceWinner();
+        String actualGameOverStatement = winChecker.getWinner();
 
         String expectedGameOverStatement = "O has won!";
 
-//        System.out.println(actualGameOverStatement);
-
-        assert actualGameOverStatement.equals(expectedGameOverStatement);
+        assertEquals(expectedGameOverStatement, actualGameOverStatement);
 
     }
 
@@ -151,21 +144,16 @@ public class WinCheckerTest {
         board.get(1).set(2, MarkSymbol.O);
         board.get(0).set(1, MarkSymbol.O);
 
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-        String formattedGameBoard = gameBoardFormatter.getFormattedGameBoard();
-//        System.out.println(formattedGameBoard);
 
         WinChecker winChecker = new WinChecker(gameBoard);
 
         winChecker.gameIsOver();
 
-        String actualGameOverStatement = winChecker.announceWinner();
+        String actualGameOverStatement = winChecker.getWinner();
 
         String expectedGameOverStatement = "Tie Game!";
 
-//        System.out.println(actualGameOverStatement);
-
-        assert actualGameOverStatement.equals(expectedGameOverStatement);
+        assertEquals(expectedGameOverStatement, actualGameOverStatement);
 
     }
 

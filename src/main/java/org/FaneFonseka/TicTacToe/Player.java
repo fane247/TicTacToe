@@ -17,7 +17,6 @@ public abstract class Player {
 
     public abstract Point getMove() throws IllegalMoveException;
 
-    //todo inconsistent naming
 
     MarkSymbol getMarkSymbol() {
 
@@ -32,10 +31,10 @@ public abstract class Player {
 
 
     public int getX() {
-        return (int) position.getX();
+        return position.getX();
     }
 
     public int getY() {
-        return (int) position.getY();
+        return position.getY();
     }
 }

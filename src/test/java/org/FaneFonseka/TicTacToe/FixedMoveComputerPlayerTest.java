@@ -3,6 +3,7 @@ package org.FaneFonseka.TicTacToe;
 import org.junit.Test;
 
 import static org.FaneFonseka.TicTacToe.MarkSymbol.X;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Fane on 13/01/2017.
@@ -17,7 +18,7 @@ public class FixedMoveComputerPlayerTest {
         Player player = new FixedMoveComputerPlayer(X, expectedMove);
         Point actualMove = player.getMove();
 
-        assert actualMove.equals(expectedMove);
+        assertEquals(expectedMove, actualMove);
 
     }
 

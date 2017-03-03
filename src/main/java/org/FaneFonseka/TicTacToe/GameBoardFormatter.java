@@ -26,7 +26,7 @@ class GameBoardFormatter {
 
         for (MarkSymbol markSymbol : row) {
 
-            stringJoiner.add(markSymbol.getMarkName());
+            stringJoiner.add(markSymbol.getMarkSymbolName());
 
         }
 

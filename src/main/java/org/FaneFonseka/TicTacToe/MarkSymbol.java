@@ -8,7 +8,7 @@ public enum MarkSymbol {
     O, X, BLANK;
 
 
-    String getMarkName() {
+    String getMarkSymbolName() {
 
         String markName = null;
 

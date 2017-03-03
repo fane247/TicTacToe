@@ -14,7 +14,7 @@ class GameBoard {
     GameBoard() {
 
         boardSize = 3;
-        setupBoard();
+        clearBoard();
     }
 
     GameBoard(GameBoard anotherGameBoard) {
@@ -42,7 +42,7 @@ class GameBoard {
     }
 
 
-    private void setupBoard() {
+    public void clearBoard() {
 
         board = new ArrayList<>();
 
@@ -71,9 +71,9 @@ class GameBoard {
         int x = move.getX();
 
         List<MarkSymbol> row = board.get(y);
-        MarkSymbol playerMark = player.getMarkSymbol();
+        MarkSymbol playerMarkSymbol = player.getMarkSymbol();
 
-        row.set(x, playerMark);
+        row.set(x, playerMarkSymbol);
 
     }
 

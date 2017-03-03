@@ -9,15 +9,11 @@ import java.util.InputMismatchException;
 public class GameGenerator {
 
     private PrintStream printStream;
-    private GameBoard gameBoard;
-    private Player player1;
-    private Player player2;
     private UserInput userInput;
 
     GameGenerator(UserInput userInput, PrintStream printStream) {
 
         this.printStream = printStream;
-        this.gameBoard = new GameBoard();
         this.userInput = userInput;
     }
 

@@ -18,16 +18,14 @@ public class UserInputFromConsole implements UserInput{
     @Override
     public int getInt() {
 
-        int i = scanner.nextInt();
-        return i;
+        return scanner.nextInt();
 
     }
 
     @Override
     public String getString() {
-//todo this returns null, any reason?
-        scanner.next();
-        return null;
+
+        return scanner.next();
 
     }
 

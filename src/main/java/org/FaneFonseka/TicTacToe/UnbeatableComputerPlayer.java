@@ -2,6 +2,7 @@ package org.FaneFonseka.TicTacToe;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 
 /**
@@ -95,7 +96,7 @@ public class UnbeatableComputerPlayer extends Player {
         }
 
         ArrayList<Point> availableSpaces = getAvailableSpaces(gameBoard);
-        java.util.List<Integer> bestMoves = new ArrayList<>();
+        List<Integer> bestMoves = new ArrayList<>();
 
         for (Point nextMove : availableSpaces) {
 
@@ -113,10 +114,7 @@ public class UnbeatableComputerPlayer extends Player {
 
         ArrayList<Point> availableSpaces = new ArrayList<>();
 
-        java.util.List<java.util.List<MarkSymbol>> board = gameBoard.getBoard();
-
-        // TODO: 23/02/2017 replace with regular loop to get index's
-
+        List<List<MarkSymbol>> board = gameBoard.getBoard();
 
         int boardSize = board.size();
 

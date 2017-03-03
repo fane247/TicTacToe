@@ -43,7 +43,7 @@ public abstract class GameRunner {
                 printStream.println("Invalid selection");
                 printStream.println("please choose again");
                 printStream.println();
-
+                userInput.flush();
             }
         }
 
@@ -86,7 +86,6 @@ public abstract class GameRunner {
     public void startGame() throws InvalidCellException {
 
         GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-
         userWantsRematch = true;
 
         while (userWantsRematch) {
@@ -104,7 +103,7 @@ public abstract class GameRunner {
             }
 
             printStream.println(gameBoardFormatter.getFormattedGameBoard());
-            printStream.println(winChecker.announceWinner());
+            printStream.println(winChecker.getWinner());
 
             tryPlayAgain();
 
@@ -130,9 +129,10 @@ public abstract class GameRunner {
                 gameBoard.placePlayersMove(currentPlayer);
                 invalidMove = false;
 
-            } catch (InvalidCellException | IndexOutOfBoundsException | IllegalMoveException | InputMismatchException e) {
+            } catch (InvalidCellException | IllegalMoveException | IndexOutOfBoundsException | InputMismatchException e) {
                 printStream.println("Not a valid move");
                 printStream.println("Please try again");
+                userInput.flush();
 
             }
         }
@@ -161,6 +161,9 @@ public abstract class GameRunner {
                 printStream.println("please choose again");
                 printStream.println();
 
+                // TODO: 03/03/2017 check this is fully manually tested i.e does it need to be flushed
+
+
             }
         }
 
@@ -178,6 +181,7 @@ public abstract class GameRunner {
 
             case "y":
                 userWantsRematch = true;
+                gameBoard.clearBoard();
                 break;
 
             case "n":

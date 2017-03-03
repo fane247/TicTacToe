@@ -13,9 +13,9 @@ public class MarkSymbolTest {
     public void whenGetMarkNameIsCalledUserFriendlyMarkNameIsReturned() {
 
 
-        assertEquals(" X ", MarkSymbol.X.getMarkName());
-        assertEquals(" O ", MarkSymbol.O.getMarkName());
-        assertEquals("   ", MarkSymbol.BLANK.getMarkName());
+        assertEquals(" X ", MarkSymbol.X.getMarkSymbolName());
+        assertEquals(" O ", MarkSymbol.O.getMarkSymbolName());
+        assertEquals("   ", MarkSymbol.BLANK.getMarkSymbolName());
 
     }
 

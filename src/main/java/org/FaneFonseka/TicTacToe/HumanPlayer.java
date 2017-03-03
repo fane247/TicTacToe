@@ -15,25 +15,24 @@ public class HumanPlayer extends Player {
     @Override
     public Point getMove() throws IllegalMoveException {
 
-        int move = getInput();
+        String move = getInput();
 
-        if (move >= 100 || move < 10) {
+        if (move.length() > 2 || move.length() <= 1) {
 
             throw new IllegalMoveException();
         }
 
-        int x = move % 10;
-        move /= 10;
-        int y = move % 10;
+        int x = Character.getNumericValue(move.charAt(0));
+        int y = Character.getNumericValue(move.charAt(1));
 
         return new Point(x, y);
 
     }
 
 
-    int getInput() {
+    String getInput() {
 
-        return userInput.getInt();
+        return userInput.getString();
     }
 
 

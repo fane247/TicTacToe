@@ -95,15 +95,10 @@ public class UnbeatableComputerPlayerTest {
 
     }
 
-
-    //todo add test for gameboard where opponent winning board evaluates to -1000
-
     @Test
     public void whenThereAreNoSpacesLeftOrThereIsAWinnerGetMaxMoveScoreReturnsScoreEvaluationOfBoard() throws InvalidCellException, IllegalMoveException {
 
         FixedMoveComputerPlayer fixedMoveComputerPlayerX = new FixedMoveComputerPlayer(MarkSymbol.X, point02);
-
-//        gameBoardWithPoint02Blank.placeAllPlayersMoves(fixedMoveComputerPlayerX);
 
         fixedMoveComputerPlayerX.placeAllPlayersMoves(gameBoardWithPoint02Blank);
 
@@ -111,7 +106,7 @@ public class UnbeatableComputerPlayerTest {
 
         Integer score = unbeatableComputerPlayer.getMaxMoveScore(gameBoardWithPoint02Blank);
 
-        assert score == 1000;
+        assertTrue(score == 1000);
 
     }
 
@@ -126,7 +121,6 @@ public class UnbeatableComputerPlayerTest {
 
         Integer score = unbeatableComputerPlayer.getMinMoveScore(gameBoardWithPoint02Blank);
 
-//        assert score == 1000;
         assertTrue(score == 1000);
 
     }
@@ -145,13 +139,6 @@ public class UnbeatableComputerPlayerTest {
         assertTrue(score == -1000);
 
     }
-
-    //todo write more tests for scenarios that just calls MinMax
-    //
-    //
-    //
-    //
-    //whenGivenABoardThatHasAMoveThatCreatesTwoWaysToWinForOpponentSpaceIsChosen
 
     @Test
     public void whenGivenABoardWithOneSpaceThatGivesAWinAndOneThatGivesALossWinSpaceIsChosen() throws InvalidCellException {

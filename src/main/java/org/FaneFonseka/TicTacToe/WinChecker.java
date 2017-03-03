@@ -4,7 +4,6 @@ import java.util.List;
 
 class WinChecker {
 
-    private List<List<MarkSymbol>> allLines;
     List<List<MarkSymbol>> allMarkSymbolLines;
     private GameBoard gameBoard;
     private boolean xHasWon;
@@ -18,7 +17,7 @@ class WinChecker {
 
     boolean gameIsOver() {
 
-        setAllLines();
+        setAllMarkSymbolLines();
 
         xHasWon = markSymbolHasWon(MarkSymbol.X);
         oHasWon = markSymbolHasWon(MarkSymbol.O);
@@ -36,7 +35,7 @@ class WinChecker {
     }
 
 
-    void setAllLines() {
+    void setAllMarkSymbolLines() {
         LineExtractor lineExtractor = new LineExtractor(gameBoard);
         allMarkSymbolLines = lineExtractor.getAllLines();
     }
@@ -44,7 +43,7 @@ class WinChecker {
 
     public Boolean markSymbolHasWon(MarkSymbol markSymbol) {
 
-        setAllLines();
+        setAllMarkSymbolLines();
 
         boolean MarkSymbolHasWon = false;
 
@@ -90,7 +89,7 @@ class WinChecker {
         return blankCount == 0;
     }
 
-    public String announceWinner() {
+    public String getWinner() {
 
         String gameOverStatement = "";
 
