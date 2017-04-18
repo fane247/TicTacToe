@@ -1,24 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9dfb07b-832e-43de-857a-09108b6fbc4f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UserInputFromConsoleTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameBoard.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameRunner.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameRunner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/LineExtractor.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/LineExtractor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UserInputFromConsole.class" afterPath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UserInputFromConsole.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/WinCheckerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/WinCheckerTest.class" />
+    <list default="true" id="95b75d99-1cce-4f67-a7f9-6578f3e01274" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jgoodies_forms_1_0_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/JgoodiesTutorial.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/MainMenuController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/MainMenuFrameView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/UserInputFromGUI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/XOGridBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/XOGridController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameBoard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/GameRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/HumanPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/InvalidCellException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/LineExtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/MarkSymbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UserInput.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/UserInputFromConsole.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/FaneFonseka/TicTacToe/WinChecker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameBoardTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/GameRunnerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/HumanPlayerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/FaneFonseka/TicTacToe/WinCheckerTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ComputerVsComputerGameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/ComputerVsComputerGameRunner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/GameBoard.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/GameBoardFormatter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/GameGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/GameRunner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/HumanPlayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/HumanVsComputerGameRunner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/HumanVsHumanGameRunner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/IllegalMoveException.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/IllegalMoveException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/InvalidCellException.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/InvalidCellException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/LineExtractor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbol.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/MarkSymbol.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Player.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/Player.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Point.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/Point.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/UnbeatableComputerPlayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/UserInput.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/UserInputFromConsole.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/core/WinChecker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankOutPutStream.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/BlankOutPutStream.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankPrintStream.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/BlankPrintStream.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/FixedMoveComputerPlayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/FixedMoveComputerPlayerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/GameBoardFormatterTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/GameBoardTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/GameGeneratorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/GameRunnerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/HumanPlayerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/LineExtractorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkSymbolTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/MarkSymbolTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/PointTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/PointTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/UnbeatableComputerPlayerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/core/WinCheckerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TicTacToe.iml" afterPath="$PROJECT_DIR$/TicTacToe.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,200 +81,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="TicTacToe" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserInputFromConsole.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameBoardTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WinCheckerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameBoardFormatter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnbeatableComputerPlayerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="172" column="62" lean-forward="true" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="JUnit4 Test Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>evaluateGameBoard</find>
-      <find>print</find>
-      <find>println</find>
-      <find>System.out</find>
-      <find>System</find>
-      <find>system</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>printStream</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-    <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
-  <component name="GroovyConsoleState">
-    <option name="list">
-      <list>
-        <Entry>
-          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_2.groovy" />
-          <option name="moduleName" value="TicTacToe" />
-          <option name="title" value="TicTacToe (Bundled Groovy 2.4.6)" />
-        </Entry>
-      </list>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BoardLinesExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Mark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/RowLineExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/DiagonalLineExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ColumnLineExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/BoardLinesExtractor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/DiagonalLineExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/ColumnLineExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/RowLineExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardEvaluator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MinMax.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MinMaxTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankOutPutStream.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankPrintStream.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolCounter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/IllegalMoveException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkSymbolTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/PointTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UserInputFromConsoleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ComputerVsComputerGameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Point.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="TicTacToe" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="width" value="1932" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -239,8 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,18 +137,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TicTacToe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,205 +181,80 @@
               <option name="myItemId" value="TicTacToe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Groovy consoles" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicTacToe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="extract.method.default.visibility" value="public" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="pos&#9;RUN_CONFIGURATION&#9;PositionLineExtractorTest" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.FaneFonseka.TicTacToe" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.FaneFonseka.TicTacToe" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.FaneFonseka.TicTacToe" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.org.FaneFonseka.TicTacToe in TicTacToe">
-    <configuration default="false" name="HumanPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.HumanPlayerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.HumanPlayerTest" />
-      <option name="METHOD_NAME" value="whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameRunnerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.GameGenerator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TicTacToe" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="org.FaneFonseka.TicTacToe in TicTacToe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -532,6 +266,7 @@
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -545,23 +280,8 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -581,48 +301,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TicTacToe" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -632,6 +310,7 @@
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -658,868 +337,61 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="HumanPlayerTest.whenUserEntersCoordinatesInConsolePointIsReturnedWithEnteredCoordinates" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="TicTacToe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.FaneFonseka.TicTacToe" />
-      <option name="MAIN_CLASS_NAME" value="org.FaneFonseka.TicTacToe.HumanPlayerTest" />
-      <option name="METHOD_NAME" value="whenUserEntersCoordinatesInConsolePointIsReturnedWithEnteredCoordinates" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest.whenUserEntersCoordinatesInConsolePointIsReturnedWithEnteredCoordinates" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameRunnerTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.GameGenerator" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.org.FaneFonseka.TicTacToe in TicTacToe" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.org.FaneFonseka.TicTacToe in TicTacToe" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GameGenerator" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameRunnerTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9dfb07b-832e-43de-857a-09108b6fbc4f" name="Default" comment="" />
-      <created>1484227835239</created>
+      <changelist id="95b75d99-1cce-4f67-a7f9-6578f3e01274" name="Default" comment="" />
+      <created>1492505841858</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1484227835239</updated>
+      <updated>1492505841858</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added GameBoardPrinter and tests for LineChekers">
-      <created>1484589265898</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1484589265898</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added GameBoardPrinter and tests for LineChekers">
-      <created>1484654849005</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1484654849005</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added BoardEvaluator test and added overloaded constructor for Mark">
-      <created>1484742556192</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1484742556192</updated>
-    </task>
-    <task id="LOCAL-00004" summary="18.01.17">
-      <created>1484765370136</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1484765370141</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Split out LineExtractors from LineChecker Classes. Fixed DiagonalLineExtractor">
-      <created>1484827205310</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1484827205311</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Started creating methods to extract all Lines for use in BoardEvaluator">
-      <created>1484843182289</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1484843182289</updated>
-    </task>
-    <task id="LOCAL-00007" summary="finished Minimax Algorithm">
-      <created>1485163177797</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1485163177797</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Started GameRunner. Delegated WinChecker">
-      <created>1485183698779</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1485183698779</updated>
-    </task>
-    <task id="LOCAL-00009" summary="3rd iteration of MinMax Class">
-      <created>1485358462409</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1485358462409</updated>
-    </task>
-    <task id="LOCAL-00010" summary="3rd iteration of MinMax Class">
-      <created>1485364128150</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1485364128150</updated>
-    </task>
-    <task id="LOCAL-00011" summary="3rd iteration of MinMax Class">
-      <created>1485364719847</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1485364719847</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Checking">
-      <created>1485430821315</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1485430821315</updated>
-    </task>
-    <task id="LOCAL-00013" summary="3rd iteration of MinMax Class">
-      <created>1485431050723</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1485431050723</updated>
-    </task>
-    <task id="LOCAL-00014" summary="3rd iteration of MinMax Class">
-      <created>1485432146226</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1485432146226</updated>
-    </task>
-    <task id="LOCAL-00015" summary="checking">
-      <created>1485433116060</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1485433116061</updated>
-    </task>
-    <task id="LOCAL-00016" summary="checking">
-      <created>1485433178119</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1485433178119</updated>
-    </task>
-    <task id="LOCAL-00017" summary="hopefully this should do it">
-      <created>1485433691531</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1485433691531</updated>
-    </task>
-    <task id="LOCAL-00018" summary="26.01.17">
-      <created>1485443623695</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1485443623695</updated>
-    </task>
-    <task id="LOCAL-00019" summary="26.01.17">
-      <created>1485443790141</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1485443790141</updated>
-    </task>
-    <task id="LOCAL-00020" summary="26.01.17">
-      <created>1485443890810</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1485443890810</updated>
-    </task>
-    <task id="LOCAL-00021" summary="26.01.17">
-      <created>1485445169076</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1485445169076</updated>
-    </task>
-    <task id="LOCAL-00022" summary="28.01.17">
-      <created>1485605170839</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1485605170839</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Finished MinMax">
-      <created>1485613890587</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1485613890587</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added review comments">
-      <created>1487789126573</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1487789126573</updated>
-    </task>
-    <task id="LOCAL-00025" summary="added review comments">
-      <created>1487789418349</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1487789418349</updated>
-    </task>
-    <task id="LOCAL-00026" summary="moved some functionality from Mark to MarkSymbol.&#10;Started merging line extractors.">
-      <created>1487868348003</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1487868348003</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Consilidated all sub LineExtractors into LineExtractor and deleted Column, Row and Diagonal Line extractor. Deleted MarkSymbol extractor and edited code that depended on it.">
-      <created>1488016992477</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1488016992477</updated>
-    </task>
-    <task id="LOCAL-00028" summary="added replay option. added PrintStream parameter to GameRunner and GameGenerator">
-      <created>1488361631244</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1488361631244</updated>
-    </task>
-    <task id="LOCAL-00029" summary="removed GameBoardEvaluator, moved FixedMoveComputerPlayer into test folder and checked some classes had tests for all core methods.">
-      <created>1488371612149</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1488371612149</updated>
-    </task>
-    <task id="LOCAL-00030" summary="merged MarkSybol counter in to WinChecker and fixed infinite loop on GameGenerator">
-      <created>1488385271238</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1488385271238</updated>
-    </task>
-    <task id="LOCAL-00031" summary="added more comprehensive testing to UnbeatableComputerPlayer">
-      <created>1488390119463</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1488390119463</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Fixed Infinite loop when user enters invalid input on GameRunner and GameGenerator. Cleaned up naming.">
-      <created>1488550734316</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1488550734316</updated>
-    </task>
-    <task id="LOCAL-00033" summary="last manual testing and edited the ReadMe.">
-      <created>1488553556134</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1488553556134</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="GameRunnerTest - 2017.03.03 at 14h 53m 47s.xml">
-      <configuration name="GameRunnerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameRunnerTest - 2017.03.03 at 14h 59m 49s.xml">
-      <configuration name="GameRunnerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest - 2017.03.03 at 14h 49m 02s.xml">
-      <configuration name="HumanPlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest - 2017.03.03 at 14h 49m 26s.xml">
-      <configuration name="HumanPlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest_whenUserEntersCoordinatesInConsolePointIsReturnedWithEnteredCoordinates - 2017.03.03 at 14h 49m 22s.xml">
-      <configuration name="HumanPlayerTest.whenUserEntersCoordinatesInConsolePointIsReturnedWithEnteredCoordinates" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest_whenUserEntersInvalidCoordinatesPointIsReturnedWithEnteredCoordinates - 2017.03.03 at 14h 48m 27s.xml">
-      <configuration name="HumanPlayerTest.whenUserEntersInvalidCoordinatesPointIsReturnedWithEnteredCoordinates" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.03 at 14h 48m 30s.xml">
-      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.03 at 14h 48m 42s.xml">
-      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HumanPlayerTest_whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown - 2017.03.03 at 14h 48m 50s.xml">
-      <configuration name="HumanPlayerTest.whenUserGivesInvalidInputForMoveIllegalMoveExceptionIsThrown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="org_FaneFonseka_TicTacToe_in_TicTacToe - 2017.03.03 at 15h 14m 52s.xml">
-      <configuration name="org.FaneFonseka.TicTacToe in TicTacToe" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41163558" sideWeight="0.5052083" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34467617" sideWeight="0.49479166" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34013605" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22135417" sideWeight="0.4762684" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22135417" sideWeight="0.5237316" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4006586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4006586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41163558" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34013605" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2921875" sideWeight="0.48264462" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28854167" sideWeight="0.5173554" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added GameBoardPrinter and tests for LineChekers" />
-    <MESSAGE value="Added BoardEvaluator test and added overloaded constructor for Mark" />
-    <MESSAGE value="18.01.17" />
-    <MESSAGE value="Split out LineExtractors from LineChecker Classes. Fixed DiagonalLineExtractor" />
-    <MESSAGE value="Started creating methods to extract all Lines for use in BoardEvaluator" />
-    <MESSAGE value="finished Minimax Algorithm" />
-    <MESSAGE value="Started GameRunner. Delegated WinChecker" />
-    <MESSAGE value="Checking" />
-    <MESSAGE value="3rd iteration of MinMax Class" />
-    <MESSAGE value="checking" />
-    <MESSAGE value="hopefully this should do it" />
-    <MESSAGE value="26.01.17" />
-    <MESSAGE value="28.01.17" />
-    <MESSAGE value="Finished MinMax" />
-    <MESSAGE value="added review comments" />
-    <MESSAGE value="moved some functionality from Mark to MarkSymbol.&#10;Started merging line extractors." />
-    <MESSAGE value="Consilidated all sub LineExtractors into LineExtractor and deleted Column, Row and Diagonal Line extractor. Deleted MarkSymbol extractor and edited code that depended on it." />
-    <MESSAGE value="added replay option. added PrintStream parameter to GameRunner and GameGenerator" />
-    <MESSAGE value="removed GameBoardEvaluator, moved FixedMoveComputerPlayer into test folder and checked some classes had tests for all core methods." />
-    <MESSAGE value="merged MarkSybol counter in to WinChecker and fixed infinite loop on GameGenerator" />
-    <MESSAGE value="added more comprehensive testing to UnbeatableComputerPlayer" />
-    <MESSAGE value="Fixed Infinite loop when user enters invalid input on GameRunner and GameGenerator. Cleaned up naming." />
-    <MESSAGE value="last manual testing and edited the ReadMe." />
-    <option name="LAST_COMMIT_MESSAGE" value="last manual testing and edited the ReadMe." />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="65" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/BoardLinesExtractor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ColumnLineExtractor.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolExtractor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Mark.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MinMax.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MinMaxTest.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/awt/print/Printable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="140" column="8" lean-forward="false" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="109" column="31" lean-forward="false" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="108" column="11" lean-forward="false" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/io/FilterOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="59" column="36" lean-forward="false" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/io/OutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="150" column="16" lean-forward="false" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankPrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#235#236#0" expanded="false" />
-            <element signature="e#261#262#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardEvaluatorTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardEvaluator.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="122" column="6" lean-forward="false" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsHumanGameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbolCounter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/BlankOutPutStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/IllegalMoveException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#178#179#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanVsComputerGameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/ComputerVsComputerGameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/HumanPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-554">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/LineExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/MarkSymbol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="174" column="22" lean-forward="false" selection-start-line="174" selection-start-column="22" selection-end-line="174" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/WinChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="111" column="5" lean-forward="true" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/FixedMoveComputerPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="140" column="1" lean-forward="true" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="225" column="1" lean-forward="true" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/HumanPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/LineExtractorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/MarkSymbolTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/PointTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UserInputFromConsoleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="421" column="19" lean-forward="false" selection-start-line="421" selection-start-column="19" selection-end-line="421" selection-end-column="19" />
-          <folding>
-            <element signature="e#21679#21680#0" expanded="true" />
-            <element signature="e#21750#21751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/UserInputFromConsole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/WinCheckerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/GameBoardFormatterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GameBoardFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/FaneFonseka/TicTacToe/UnbeatableComputerPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="172" column="62" lean-forward="true" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>TicTacToe</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
 </project>

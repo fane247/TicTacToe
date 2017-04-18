@@ -18,6 +18,13 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/jgoodies/forms -->
+        <dependency>
+            <groupId>jgoodies</groupId>
+            <artifactId>forms</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+
     </dependencies>
     <build>
 
