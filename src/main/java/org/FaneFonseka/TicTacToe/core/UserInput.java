@@ -5,7 +5,9 @@ package org.FaneFonseka.TicTacToe.core;
  */
 public interface UserInput {
 
-    int getInt();
+    int getGameMode();
+
+    int getCurrentPlayerSelection();
 
     String getString();
 

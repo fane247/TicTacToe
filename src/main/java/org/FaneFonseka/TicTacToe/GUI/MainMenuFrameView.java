@@ -92,6 +92,7 @@ public class MainMenuFrameView extends JDialog implements Serializable {
         startButton = new JButton("start");
 
         startButton.addActionListener(new ActionListener() {
+
             public void actionPerformed(ActionEvent e) {
 
                 Enumeration<AbstractButton> gameTypesElements = gameTypeRadioButtonMenuItem.getElements();

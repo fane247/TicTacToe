@@ -27,9 +27,11 @@ public class XOGridController extends JFrame{
 
     private JPanel buildPanel() {
 
-        XOGridBuilder xoGridBuilder = new XOGridBuilder();
+//        XOGridBuilder xoGridBuilder = new XOGridBuilder();
+//
+//        return xoGridBuilder.buildPanel();
 
-        return xoGridBuilder.buildPanel();
+        return null;
 
     }
 

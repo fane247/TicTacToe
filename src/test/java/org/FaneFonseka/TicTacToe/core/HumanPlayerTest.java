@@ -15,7 +15,12 @@ public class HumanPlayerTest {
 
         UserInput userInput1 = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
+                return 0;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
                 return 0;
             }
 
@@ -26,7 +31,7 @@ public class HumanPlayerTest {
 
             @Override
             public String getMove() {
-                return null;
+                return "11";
             }
 
             @Override
@@ -50,7 +55,12 @@ public class HumanPlayerTest {
 
         UserInput userInput1 = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
+                return 0;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
                 return 0;
             }
 
@@ -61,7 +71,7 @@ public class HumanPlayerTest {
 
             @Override
             public String getMove() {
-                return null;
+                return "11";
             }
 
             @Override
@@ -85,7 +95,12 @@ public class HumanPlayerTest {
 
         UserInput userInput1 = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
+                return 0;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
                 return 0;
             }
 
@@ -96,7 +111,7 @@ public class HumanPlayerTest {
 
             @Override
             public String getMove() {
-                return null;
+                return "100";
             }
 
             @Override

@@ -27,8 +27,13 @@ public class GameGeneratorTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -60,8 +65,13 @@ public class GameGeneratorTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 3;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -94,8 +104,13 @@ public class GameGeneratorTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 2;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -130,8 +145,13 @@ public class GameGeneratorTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return userInputList.pop();
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override

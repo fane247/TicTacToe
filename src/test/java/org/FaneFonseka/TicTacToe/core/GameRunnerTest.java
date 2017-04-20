@@ -26,8 +26,13 @@ public class GameRunnerTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -64,8 +69,13 @@ public class GameRunnerTest {
         UserInput userInput = new UserInput() {
 
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -104,8 +114,13 @@ public class GameRunnerTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -139,8 +154,13 @@ public class GameRunnerTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -178,8 +198,13 @@ public class GameRunnerTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override
@@ -219,8 +244,13 @@ public class GameRunnerTest {
 
         UserInput userInput = new UserInput() {
             @Override
-            public int getInt() {
+            public int getGameMode() {
                 return 1;
+            }
+
+            @Override
+            public int getCurrentPlayerSelection() {
+                return 0;
             }
 
             @Override

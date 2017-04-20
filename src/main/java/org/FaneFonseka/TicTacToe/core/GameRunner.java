@@ -16,6 +16,7 @@ public abstract class GameRunner {
     private Player currentPlayer;
     private WinChecker winChecker;
     Boolean userWantsRematch;
+    private GameBoardFormatter gameBoardFormatter;
 
     public GameRunner(UserInput userInput, PrintStream printStream) {
 
@@ -23,7 +24,9 @@ public abstract class GameRunner {
         this.userInput = userInput;
         gameBoard = new GameBoard();
         winChecker = new WinChecker(gameBoard);
+        userWantsRematch = true;
         setPlayers();
+        gameBoardFormatter = new GameBoardFormatter(gameBoard);
     }
 
     abstract void setPlayers();
@@ -58,7 +61,7 @@ public abstract class GameRunner {
         printStream.println("2. player 2?");
         printStream.println();
 
-        int selection = userInput.getInt();
+        int selection = userInput.getGameMode();
 
         System.out.println();
         System.out.println("user selection: " + selection);
@@ -88,9 +91,6 @@ public abstract class GameRunner {
 
     public void startGame() throws InvalidCellException {
 
-        GameBoardFormatter gameBoardFormatter = new GameBoardFormatter(gameBoard);
-        userWantsRematch = true;
-
         while (userWantsRematch) {
 
             printStream.println("make your selection in the for xy");
@@ -105,8 +105,7 @@ public abstract class GameRunner {
                 swapPlayer();
             }
 
-            printStream.println(gameBoardFormatter.getFormattedGameBoard());
-            printStream.println(winChecker.getWinner());
+            announceWinner();
 
             tryPlayAgain();
 
@@ -114,7 +113,36 @@ public abstract class GameRunner {
 
     }
 
-    private Boolean gameIsOver() {
+    //re-arranging startGame method
+    //todo check tests are still relevant and if necessary write new ones
+
+    public void setupGame(){
+
+        gameBoardFormatter = new GameBoardFormatter(gameBoard);
+        userWantsRematch = true;
+
+        printStream.println("make your selection in the for xy");
+        printStream.println("for example the bottom right square would be 22");
+        printStream.println();
+
+    }
+
+    public void playOneRound(){
+
+        printStream.println(currentPlayer.markSymbol + "'s move");
+        printStream.println(gameBoardFormatter.getFormattedGameBoard());
+        tryMove();
+        swapPlayer();
+
+    }
+
+    public void announceWinner() {
+        printStream.println(gameBoardFormatter.getFormattedGameBoard());
+        printStream.println(winChecker.getWinner());
+    }
+
+
+    public Boolean gameIsOver() {
 
         winChecker = new WinChecker(this.gameBoard);
         return winChecker.gameIsOver();
@@ -147,7 +175,7 @@ public abstract class GameRunner {
     }
 
 
-    private void tryPlayAgain() {
+    public void tryPlayAgain() {
 
         boolean isInvalidSelection = true;
 

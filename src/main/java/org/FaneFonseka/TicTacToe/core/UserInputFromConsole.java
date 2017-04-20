@@ -17,10 +17,15 @@ public class UserInputFromConsole implements UserInput{
     }
 
     @Override
-    public int getInt() {
+    public int getGameMode() {
 
         return scanner.nextInt();
 
+    }
+
+    @Override
+    public int getCurrentPlayerSelection() {
+        return scanner.nextInt();
     }
 
     @Override

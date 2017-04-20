@@ -2,7 +2,6 @@ package org.FaneFonseka.TicTacToe.GUI;
 
 import org.FaneFonseka.TicTacToe.core.UserInput;
 
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Stack;
@@ -13,19 +12,27 @@ import java.util.Stack;
 public class UserInputFromGUI implements UserInput, ActionListener {
 
 
-    private Stack<Integer> userResponses;
+    private Stack<Integer> setupResponses;
+    private String move;
 
     public UserInputFromGUI(int gameTypeSelection, int playerToGoFirst){
 
-        userResponses = new Stack<>();
-        userResponses.add(gameTypeSelection);
-        userResponses.add(playerToGoFirst);
+        setupResponses = new Stack<>();
+        setupResponses.add(gameTypeSelection);
+        setupResponses.add(playerToGoFirst);
 
     }
 
     @Override
-    public int getInt() {
-        return userResponses.pop();
+    public int getGameMode() {
+
+        return setupResponses.pop();
+
+    }
+
+    @Override
+    public int getCurrentPlayerSelection() {
+        return setupResponses.pop();
     }
 
     @Override
@@ -36,7 +43,7 @@ public class UserInputFromGUI implements UserInput, ActionListener {
     @Override
     public String getMove() {
 
-        return null;
+        return move;
     }
 
     @Override
@@ -47,7 +54,10 @@ public class UserInputFromGUI implements UserInput, ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-
+        move = e.getActionCommand();
 
     }
+
+
+
 }

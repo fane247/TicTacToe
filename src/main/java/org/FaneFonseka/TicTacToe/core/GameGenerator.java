@@ -52,7 +52,7 @@ public class GameGenerator {
         printStream.println("3. Human vs Computer");
         printStream.println();
 
-        int selection = userInput.getInt();
+        int selection = userInput.getGameMode();
 
         GameRunner gameRunner;
 
@@ -87,7 +87,22 @@ public class GameGenerator {
         GameGenerator gameGenerator = new GameGenerator(userInputFromConsole, System.out);
         GameRunner gameRunnerType = gameGenerator.tryGetGameRunnerType();
         gameRunnerType.trySetCurrentPlayer();
-        gameRunnerType.startGame();
+
+        while (gameRunnerType.userWantsRematch) {
+
+            gameRunnerType.setupGame();
+
+            while (!gameRunnerType.gameIsOver()){
+
+                gameRunnerType.playOneRound();
+
+            }
+
+            gameRunnerType.announceWinner();
+            gameRunnerType.tryPlayAgain();
+
+        }
+
     }
 
 }
