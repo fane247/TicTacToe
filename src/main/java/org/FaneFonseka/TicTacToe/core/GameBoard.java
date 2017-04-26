@@ -89,7 +89,7 @@ public class GameBoard {
     }
 
 
-    List<List<MarkSymbol>> getBoard() {
+    public List<List<MarkSymbol>> getBoard() {
 
         return board;
     }

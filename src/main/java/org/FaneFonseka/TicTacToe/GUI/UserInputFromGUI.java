@@ -12,28 +12,63 @@ import java.util.Stack;
 public class UserInputFromGUI implements UserInput, ActionListener {
 
 
-    private Stack<Integer> setupResponses;
+    private final String gameTypeSelection;
+    private final String playerToGoFirst;
     private String move;
 
-    public UserInputFromGUI(int gameTypeSelection, int playerToGoFirst){
+    public UserInputFromGUI(String gameTypeSelection, String playerToGoFirst) {
 
-        setupResponses = new Stack<>();
-        setupResponses.add(gameTypeSelection);
-        setupResponses.add(playerToGoFirst);
-
+        this.gameTypeSelection = gameTypeSelection;
+        this.playerToGoFirst = playerToGoFirst;
     }
 
     @Override
     public int getGameMode() {
 
-        return setupResponses.pop();
+        int gameModeSelection = 0;
+
+        switch (gameTypeSelection) {
+
+            case "Human Vs Human":
+                return 1;
+
+            case "Computer vs Computer":
+                return 2;
+
+            case "Human vs Computer":
+                return 3;
+
+        }
+
+        System.out.println("gameMode: " + gameModeSelection);
+
+        return gameModeSelection;
 
     }
 
     @Override
     public int getCurrentPlayerSelection() {
-        return setupResponses.pop();
+
+        int playerToGoFirstSelection = 0;
+
+        switch (playerToGoFirst){
+
+            case "Player 1":
+                playerToGoFirstSelection = 1;
+                break;
+
+            case "Player 2":
+                playerToGoFirstSelection = 2;
+                break;
+        }
+
+        System.out.println("currentPlayer: " + playerToGoFirstSelection);
+
+        return playerToGoFirstSelection;
+
     }
+
+
 
     @Override
     public String getString() {
@@ -57,7 +92,6 @@ public class UserInputFromGUI implements UserInput, ActionListener {
         move = e.getActionCommand();
 
     }
-
 
 
 }

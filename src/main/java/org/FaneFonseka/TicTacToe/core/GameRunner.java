@@ -231,7 +231,7 @@ public abstract class GameRunner {
         return player2;
     }
 
-    Player getCurrentPlayer() {
+    public Player getCurrentPlayer() {
         return currentPlayer;
     }
 

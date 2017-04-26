@@ -25,13 +25,13 @@
             <left>
                 <VBox>
                     <fx:define>
-                        <ToggleGroup fx:id="GameTypeGroup"/>
+                        <ToggleGroup fx:id="gameTypeGroup"/>
                     </fx:define>
 
                     <children>
-                        <RadioButton selected="true" text="Human Vs Human" toggleGroup="$GameTypeGroup"/>
-                        <RadioButton text="Computer vs Computer" toggleGroup="$GameTypeGroup"/>
-                        <RadioButton text="Human vs Computer" toggleGroup="$GameTypeGroup"/>
+                        <RadioButton selected="true" text="Human Vs Human" toggleGroup="$gameTypeGroup"/>
+                        <RadioButton text="Computer vs Computer" toggleGroup="$gameTypeGroup"/>
+                        <RadioButton text="Human vs Computer" toggleGroup="$gameTypeGroup"/>
                     </children>
                 </VBox>
             </left>
@@ -40,12 +40,12 @@
                     <left>
                         <VBox>
                             <fx:define>
-                                <ToggleGroup fx:id="CurrentPlayerGroup"/>
+                                <ToggleGroup fx:id="currentPlayerGroup"/>
                             </fx:define>
 
                             <children>
-                                <RadioButton selected="true" text="Player 1" toggleGroup="$CurrentPlayerGroup"/>
-                                <RadioButton text="Player 2" toggleGroup="$CurrentPlayerGroup"/>
+                                <RadioButton selected="true" text="Player 1" toggleGroup="$currentPlayerGroup"/>
+                                <RadioButton text="Player 2" toggleGroup="$currentPlayerGroup"/>
                             </children>
 
                         </VBox>
