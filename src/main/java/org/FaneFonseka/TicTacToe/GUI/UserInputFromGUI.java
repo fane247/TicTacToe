@@ -9,12 +9,13 @@ import java.util.Stack;
 /**
  * Created by Fane on 24/03/2017.
  */
-public class UserInputFromGUI implements UserInput, ActionListener {
+public class UserInputFromGUI implements UserInput{
 
 
     private final String gameTypeSelection;
     private final String playerToGoFirst;
     private String move;
+    private TicTacToeMainController ticTacToeMainController;
 
     public UserInputFromGUI(String gameTypeSelection, String playerToGoFirst) {
 
@@ -78,6 +79,7 @@ public class UserInputFromGUI implements UserInput, ActionListener {
     @Override
     public String getMove() {
 
+        move = ticTacToeMainController.getMove();
         return move;
     }
 
@@ -86,12 +88,8 @@ public class UserInputFromGUI implements UserInput, ActionListener {
 
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
-        move = e.getActionCommand();
-
+    public void setTicTacToeMainController(TicTacToeMainController ticTacToeMainController) {
+        this.ticTacToeMainController = ticTacToeMainController;
     }
-
 
 }

@@ -61,7 +61,7 @@ public abstract class GameRunner {
         printStream.println("2. player 2?");
         printStream.println();
 
-        int selection = userInput.getGameMode();
+        int selection = userInput.getCurrentPlayerSelection();
 
         System.out.println();
         System.out.println("user selection: " + selection);
@@ -132,6 +132,15 @@ public abstract class GameRunner {
         printStream.println(currentPlayer.markSymbol + "'s move");
         printStream.println(gameBoardFormatter.getFormattedGameBoard());
         tryMove();
+        swapPlayer();
+
+    }
+
+    public void playOneGUIRound() throws InvalidCellException, IllegalMoveException {
+
+        printStream.println(currentPlayer.markSymbol + "'s move");
+        printStream.println(gameBoardFormatter.getFormattedGameBoard());
+        gameBoard.placePlayersMove(currentPlayer);
         swapPlayer();
 
     }
@@ -233,6 +242,10 @@ public abstract class GameRunner {
 
     public Player getCurrentPlayer() {
         return currentPlayer;
+    }
+
+    public UserInput getUserInput() {
+        return userInput;
     }
 
 

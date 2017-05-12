@@ -52,17 +52,22 @@ public class GameOptionsController extends Application {
         RadioButton selectedPlayerRB = (RadioButton) currentPlayerGroup.getSelectedToggle();
         String selectedPlayer = selectedPlayerRB.getText();
 
+        System.out.println(selectedPlayer);
+
         RadioButton selectedGameTypeRB = (RadioButton) gameTypeGroup.getSelectedToggle();
         String selectedGameType = selectedGameTypeRB.getText();
+
+        System.out.println(selectedGameType);
 
         UserInputFromGUI userInputFromGUI = new UserInputFromGUI(selectedGameType, selectedPlayer);
 
         GameGenerator gameGenerator = new GameGenerator(userInputFromGUI, System.out);
         GameRunner gameRunner = gameGenerator.tryGetGameRunnerType();
         gameRunner.trySetCurrentPlayer();
+        TicTacToeMainController ticTacToeMainController = new TicTacToeMainController(gameRunner);
+        userInputFromGUI.setTicTacToeMainController(ticTacToeMainController);
 
         Stage stage = new Stage();
-        TicTacToeMainController ticTacToeMainController = new TicTacToeMainController(gameRunner);
         ticTacToeMainController.start(stage);
 
         ((Node)(e.getSource())).getScene().getWindow().hide();

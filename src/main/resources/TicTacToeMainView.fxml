@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -17,14 +18,23 @@
     <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <ImageView id="00" fx:id="cell00" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView id="10" fx:id="cell10" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
-      <ImageView id="20" fx:id="cell20" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
-      <ImageView id="01" fx:id="cell01" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-      <ImageView id="11" fx:id="cell11" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <ImageView id="21" fx:id="cell21" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <ImageView id="02" fx:id="cell02" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
-      <ImageView id="12" fx:id="cell12" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <ImageView id="22" fx:id="cell22" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <ImageView id="00" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="10" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+      <ImageView id="20" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+      <ImageView id="01" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+      <ImageView id="11" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ImageView id="21" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <ImageView id="02" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+      <ImageView id="12" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ImageView id="22" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button id="00" fx:id="cell00" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" />
+      <Button id="10" fx:id="cell10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.columnIndex="1" />
+      <Button id="20" fx:id="cell20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.columnIndex="2" />
+      <Button id="01" fx:id="cell01" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.rowIndex="1" />
+      <Button id="11" fx:id="cell11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button id="21" fx:id="cell21" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button id="02" fx:id="cell02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.rowIndex="2" />
+      <Button id="12" fx:id="cell12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button id="22" fx:id="cell22" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#playOneMove" opacity="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
    </children>
 </GridPane>
