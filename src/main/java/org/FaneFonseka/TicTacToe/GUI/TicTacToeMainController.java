@@ -1,6 +1,7 @@
 package org.FaneFonseka.TicTacToe.GUI;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -17,6 +18,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import org.FaneFonseka.TicTacToe.core.*;
 
 import java.io.IOException;
@@ -28,52 +30,18 @@ import java.util.List;
  */
 public class TicTacToeMainController extends Application {
 
-    private final UserInput userInput;
     private String move;
     private GameRunner gameRunner;
     private Parent root;
+    private GameBoard gameBoard;
+    private List<List<ImageView>> grid;
+
 
     public TicTacToeMainController(GameRunner gameRunner) {
 
         this.gameRunner = gameRunner;
         this.gameBoard = gameRunner.gameBoard;
-        userInput = gameRunner.getUserInput();
-
     }
-
-    public void setGameRunner(GameRunner gameRunner) {
-        this.gameRunner = gameRunner;
-    }
-
-
-
-    public void setGameBoard(GameBoard gameBoard) {
-        this.gameBoard = gameBoard;
-    }
-
-    private GameBoard gameBoard;
-
-//    @FXML
-//    private ImageView cell00;
-//    @FXML
-//    private ImageView cell10;
-//    @FXML
-//    private ImageView cell20;
-//    @FXML
-//    private ImageView cell01;
-//    @FXML
-//    private ImageView cell11;
-//    @FXML
-//    private ImageView cell21;
-//    @FXML
-//    private ImageView cell02;
-//    @FXML
-//    private ImageView cell12;
-//    @FXML
-//    private ImageView cell22;
-
-    private List<List<ImageView>> grid;
-
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -89,7 +57,7 @@ public class TicTacToeMainController extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
 
-        initialise();
+        addNodesToGrid();
 
         if (gameRunner.getCurrentPlayer() instanceof UnbeatableComputerPlayer) {
 
@@ -98,7 +66,12 @@ public class TicTacToeMainController extends Application {
 
     }
 
-    private void initialise() {
+    public static void main(String[] args) {
+
+        launch(args);
+    }
+
+    private void addNodesToGrid() {
 
         grid = new ArrayList<>();
 
@@ -113,13 +86,9 @@ public class TicTacToeMainController extends Application {
             if (node instanceof ImageView) {
 
                 String id = node.getId();
-//                System.out.println("Node: " + node.toString());
 
                 int x = Character.getNumericValue(id.charAt(0));
                 int y = Character.getNumericValue(id.charAt(1));
-
-//                System.out.println("x: " + x);
-//                System.out.println("y: " + y);
 
                 grid.get(y).add(x, (ImageView) node);
             }
@@ -139,21 +108,17 @@ public class TicTacToeMainController extends Application {
 
                 MarkSymbol markSymbol = markSymbols.get(j);
 
-
                 if (markSymbol.equals(MarkSymbol.X)) {
 
                     ImageView imageView = grid.get(i).get(j);
                     imageView.setImage(new Image("images/X.png"));
-                    addMouseEventHandler(imageView);
 
                 }
 
                 if (markSymbol.equals(MarkSymbol.O)) {
 
-
                     ImageView imageView = grid.get(i).get(j);
                     imageView.setImage(new Image("images/O.png"));
-                    addMouseEventHandler(imageView);
 
                 }
 
@@ -161,7 +126,6 @@ public class TicTacToeMainController extends Application {
 
                     ImageView imageView = grid.get(i).get(j);
                     imageView.setImage(new Image("images/BLANK.png"));
-                    addMouseEventHandler(imageView);
 
                 }
 
@@ -171,29 +135,10 @@ public class TicTacToeMainController extends Application {
 
     }
 
-    private void addMouseEventHandler(ImageView imageView) {
-        imageView.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-
-            @Override
-            public void handle(MouseEvent event) {
-                System.out.println("Tile pressed ");
-                event.consume();
-            }
-        });
-    }
-
-    public static void main(String[] args) {
-
-        launch(args);
-    }
-
-
     private void playOneRound() throws IOException, InvalidCellException, IllegalMoveException {
-
 
         gameRunner.playOneGUIRound();
         updateView();
-
 
         if (gameRunner.gameIsOver()) {
 
@@ -206,10 +151,9 @@ public class TicTacToeMainController extends Application {
 
         }
 
-
     }
 
-    public void tryPlayOneRound(){
+    public void tryPlayOneRound() {
 
         try {
             playOneRound();
@@ -227,6 +171,24 @@ public class TicTacToeMainController extends Application {
 
     }
 
+    @FXML
+    private void playOneMove(ActionEvent e) throws IOException {
+
+        Button cell = (Button) e.getSource();
+        String id = cell.getId();
+        setMove(id);
+        tryPlayOneRound();
+
+    }
+
+    public String getMove() {
+        return move;
+    }
+
+    public void setMove(String move) {
+        this.move = move;
+    }
+
     private void playAgainDialogue() throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/PlayAgainDialogue.fxml"));
@@ -237,6 +199,9 @@ public class TicTacToeMainController extends Application {
         Scene scene = new Scene(root);
 
         Stage primaryStage = new Stage();
+
+        primaryStage.setOnCloseRequest(event -> Platform.exit());
+
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.initModality(Modality.APPLICATION_MODAL);
@@ -244,29 +209,12 @@ public class TicTacToeMainController extends Application {
         primaryStage.setResizable(false);
         primaryStage.showAndWait();
 
-
-    }
-
-    private void playAgainHandler(ActionEvent e) {
-
-        System.out.println(e.getSource().toString());
-
-
     }
 
     @FXML
     private void restartGame(ActionEvent e) throws Exception {
-//
-//        GameOptionsController gameOptionsController = new GameOptionsController();
-//        gameOptionsController.start(new Stage());
-
-        System.out.println("Target: " + e.getTarget());
-        System.out.println();
-        System.out.println("Source: " + e.getSource());
-        System.out.println();
 
         Button response = (Button) e.getSource();
-
 
         switch (response.getId()) {
 
@@ -274,36 +222,17 @@ public class TicTacToeMainController extends Application {
                 GameOptionsController gameOptionsController = new GameOptionsController();
                 gameOptionsController.start(new Stage());
                 root.getScene().getWindow().hide();
-                ((Node)(e.getSource())).getScene().getWindow().hide();
+                ((Node) (e.getSource())).getScene().getWindow().hide();
                 break;
 
             case "no":
                 root.getScene().getWindow().hide();
-                ((Node)(e.getSource())).getScene().getWindow().hide();
+                ((Node) (e.getSource())).getScene().getWindow().hide();
                 break;
 
         }
 
     }
 
-    @FXML
-    private void playOneMove(ActionEvent e) throws IOException {
 
-        Button cell = (Button) e.getSource();
-        String id = cell.getId();
-        setMove(id);
-
-
-        tryPlayOneRound();
-
-    }
-
-
-    public String getMove() {
-        return move;
-    }
-
-    public void setMove(String move) {
-        this.move = move;
-    }
 }

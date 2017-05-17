@@ -48,23 +48,8 @@ public class GameOptionsController extends Application {
 
     public void startGame(ActionEvent e) throws Exception {
 
-
-        RadioButton selectedPlayerRB = (RadioButton) currentPlayerGroup.getSelectedToggle();
-        String selectedPlayer = selectedPlayerRB.getText();
-
-        System.out.println(selectedPlayer);
-
-        RadioButton selectedGameTypeRB = (RadioButton) gameTypeGroup.getSelectedToggle();
-        String selectedGameType = selectedGameTypeRB.getText();
-
-        System.out.println(selectedGameType);
-
-        UserInputFromGUI userInputFromGUI = new UserInputFromGUI(selectedGameType, selectedPlayer);
-
-        GameGenerator gameGenerator = new GameGenerator(userInputFromGUI, System.out);
-        GameRunner gameRunner = gameGenerator.tryGetGameRunnerType();
-        gameRunner.trySetCurrentPlayer();
-        TicTacToeMainController ticTacToeMainController = new TicTacToeMainController(gameRunner);
+        UserInputFromGUI userInputFromGUI = getUserInputFromGUI();
+        TicTacToeMainController ticTacToeMainController = getTicTacToeMainController(userInputFromGUI);
         userInputFromGUI.setTicTacToeMainController(ticTacToeMainController);
 
         Stage stage = new Stage();
@@ -72,6 +57,23 @@ public class GameOptionsController extends Application {
 
         ((Node)(e.getSource())).getScene().getWindow().hide();
 
+    }
+
+    private TicTacToeMainController getTicTacToeMainController(UserInputFromGUI userInputFromGUI) {
+        GameGenerator gameGenerator = new GameGenerator(userInputFromGUI, System.out);
+        GameRunner gameRunner = gameGenerator.tryGetGameRunnerType();
+        gameRunner.trySetCurrentPlayer();
+        return new TicTacToeMainController(gameRunner);
+    }
+
+    private UserInputFromGUI getUserInputFromGUI() {
+        RadioButton selectedPlayerRB = (RadioButton) currentPlayerGroup.getSelectedToggle();
+        String selectedPlayer = selectedPlayerRB.getText();
+
+        RadioButton selectedGameTypeRB = (RadioButton) gameTypeGroup.getSelectedToggle();
+        String selectedGameType = selectedGameTypeRB.getText();
+
+        return new UserInputFromGUI(selectedGameType, selectedPlayer);
     }
 
 

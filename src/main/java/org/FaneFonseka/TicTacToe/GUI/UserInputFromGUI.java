@@ -69,12 +69,10 @@ public class UserInputFromGUI implements UserInput{
 
     }
 
-
-
-    @Override
-    public String getString() {
-        return null;
+    public void setTicTacToeMainController(TicTacToeMainController ticTacToeMainController) {
+        this.ticTacToeMainController = ticTacToeMainController;
     }
+
 
     @Override
     public String getMove() {
@@ -84,12 +82,13 @@ public class UserInputFromGUI implements UserInput{
     }
 
     @Override
-    public void flush() {
-
+    public String getString() {
+        return null;
     }
 
-    public void setTicTacToeMainController(TicTacToeMainController ticTacToeMainController) {
-        this.ticTacToeMainController = ticTacToeMainController;
+    @Override
+    public void flush() {
+
     }
 
 }
