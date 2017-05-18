@@ -30,7 +30,7 @@ public class GameOptionsController extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("/GameOptionsView.fxml"));
 
-        Scene scene = new Scene(root, 250, 200);
+        Scene scene = new Scene(root, 250, 250);
 
         primaryStage.setTitle("Game Options");
         primaryStage.setScene(scene);

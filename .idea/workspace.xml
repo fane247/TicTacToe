@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95b75d99-1cce-4f67-a7f9-6578f3e01274" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/JgoodiesTutorial.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/GameOptionsController.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/GameOptionsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/TicTacToeMainController.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/TicTacToeMainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/UserInputFromGUI.java" afterPath="$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/UserInputFromGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/GameOptionsView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/GameOptionsView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="UserInputFromGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/UserInputFromGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="1113">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,8 +38,8 @@
       <file leaf-file-name="GameOptionsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/GameOptionsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,9 +50,14 @@
       <file leaf-file-name="GameOptionsView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/GameOptionsView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="1470">
+              <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+              <folding>
+                <marker date="1495095111998" expanded="true" signature="3142:3166" ph="..." />
+                <marker date="1495095111998" expanded="true" signature="3142:3182" ph="..." />
+                <marker date="1495095111998" expanded="true" signature="3142:3196" ph="..." />
+                <marker date="1495095111998" expanded="true" signature="3142:3211" ph="..." />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -65,7 +68,7 @@
       <file leaf-file-name="TicTacToeMainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/TicTacToeMainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="147">
               <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -200,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -339,6 +341,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -752,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494591150115</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactored and cleaned some classes in GUI package">
+      <created>1495012468057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1495012468057</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -789,6 +799,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -805,7 +816,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24868836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24868836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -830,7 +841,8 @@
     <MESSAGE value="added views and TicTacToe Controller" />
     <MESSAGE value="added updateView method and playAgain dialogue" />
     <MESSAGE value="finished play again dialogue and invalid move dialogue box" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished play again dialogue and invalid move dialogue box" />
+    <MESSAGE value="refactored and cleaned some classes in GUI package" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored and cleaned some classes in GUI package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -921,7 +933,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
+          <folding>
+            <marker date="1495095111998" expanded="true" signature="3142:3166" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3182" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3196" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3211" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -985,7 +1002,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="60" />
-          <folding />
+          <folding>
+            <marker date="1495095111998" expanded="true" signature="3142:3166" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3182" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3196" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3211" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1049,7 +1071,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1495095111998" expanded="true" signature="3142:3166" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3182" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3196" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3211" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1141,19 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/PlayAgainDialogue.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="124" lean-forward="false" selection-start-line="10" selection-start-column="124" selection-end-line="10" selection-end-column="124" />
-          <folding>
-            <marker date="1494582982373" expanded="true" signature="1848:1852" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/TicTacToeMainView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -1200,9 +1214,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/GameOptionsView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="1470">
+          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+          <folding>
+            <marker date="1495095111998" expanded="true" signature="3142:3166" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3182" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3196" ph="..." />
+            <marker date="1495095111998" expanded="true" signature="3142:3211" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1230,7 +1249,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/TicTacToeMainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="147">
           <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1241,27 +1260,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/UserInputFromGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="1113">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/JgoodiesTutorial.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/PlayAgainDialogue.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="124" lean-forward="false" selection-start-line="10" selection-start-column="124" selection-end-line="10" selection-end-column="124" />
+          <folding>
+            <marker date="1494582982373" expanded="true" signature="1848:1852" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/GameOptionsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/FaneFonseka/TicTacToe/GUI/JgoodiesTutorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>

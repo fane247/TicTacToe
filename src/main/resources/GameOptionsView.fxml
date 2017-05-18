@@ -2,18 +2,17 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0"
-            prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.FaneFonseka.TicTacToe.GUI.GameOptionsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.FaneFonseka.TicTacToe.GUI.GameOptionsController">
 
     <padding>
-        <Insets bottom="10" left="25" right="25" top="25"/>
+        <Insets bottom="10" left="25" right="25" top="25" />
     </padding>
 
     <center>
@@ -25,13 +24,24 @@
             <left>
                 <VBox>
                     <fx:define>
-                        <ToggleGroup fx:id="gameTypeGroup"/>
+                        <ToggleGroup fx:id="gameTypeGroup" />
                     </fx:define>
 
                     <children>
-                        <RadioButton selected="true" text="Human Vs Human" toggleGroup="$gameTypeGroup"/>
-                        <RadioButton text="Computer vs Computer" toggleGroup="$gameTypeGroup"/>
-                        <RadioButton text="Human vs Computer" toggleGroup="$gameTypeGroup"/>
+                  <Label text="Game Mode">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                        <RadioButton selected="true" text="Human Vs Human">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gameTypeGroup" />
+                     </toggleGroup>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding></RadioButton>
+                        <RadioButton text="Computer vs Computer" toggleGroup="$gameTypeGroup" />
+                        <RadioButton text="Human vs Computer" toggleGroup="$gameTypeGroup" />
                     </children>
                 </VBox>
             </left>
@@ -40,12 +50,20 @@
                     <left>
                         <VBox>
                             <fx:define>
-                                <ToggleGroup fx:id="currentPlayerGroup"/>
+                                <ToggleGroup fx:id="currentPlayerGroup" />
                             </fx:define>
 
                             <children>
-                                <RadioButton selected="true" text="Player 1" toggleGroup="$currentPlayerGroup"/>
-                                <RadioButton text="Player 2" toggleGroup="$currentPlayerGroup"/>
+                        <Label text="Player to start">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                                <RadioButton selected="true" text="Player 1">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="currentPlayerGroup" />
+                           </toggleGroup></RadioButton>
+                                <RadioButton text="Player 2" toggleGroup="$currentPlayerGroup" />
                             </children>
 
                         </VBox>
@@ -58,10 +76,10 @@
     <bottom>
         <HBox>
             <children>
-                <Button onAction="#startGame" text="Start"/>
+                <Button onAction="#startGame" text="Start" />
             </children>
             <padding>
-                <Insets top="10.0"/>
+                <Insets top="10.0" />
             </padding>
         </HBox>
     </bottom>
